@@ -1,0 +1,14 @@
+/* Grid for all pages*/
+.wrapper{
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.mainbox{
+grid-column: 2/3;
+grid-row: 1;
+}
+.secondbox{
+grid-column: 2/3;
+grid-row: 2;
+}
