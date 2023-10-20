@@ -1,14 +1,45 @@
+/* Generell css */
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
 /* Grid for all pages*/
-.wrapper{
+.wrapper {
     display: grid;
     grid-template-columns: 20px auto 20px;
     grid-auto-rows: minmax(100px, auto);
 }
-.mainbox{
+.mainbox {
 grid-column: 2/3;
 grid-row: 1;
+margin-top: 50px;
 }
-.secondbox{
+.secondbox {
 grid-column: 2/3;
 grid-row: 2;
+}
+
+/* Css for navbar */
+.navbar {
+    position: fixed;
+    background-color: orange;
+    width: 100vw;
+}
+.navbar li {
+    display: inline-block;
+    margin-right: 25px;
+}
+.navbar a {
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+.navbar a:hover {
+    color: white;
+    transition-duration: 250ms;
+}
+.active a {
+    color: white;
 }
