@@ -102,7 +102,7 @@ body {
     .menu-button::before,
     .menu-button::after {
         display: block;
-        background-image: url(../media/burger.png);
+        background-image: url(../media/hamburgermeny.png);
         background-size: cover; /* "cover" stretch image to fill box */
         position: sticky;
         height: 40px;
