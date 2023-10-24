@@ -7,17 +7,103 @@ body {
 /* Grid for all pages*/
 .wrapper {
     display: grid;
-    grid-template-columns: 20px auto 20px;
+    grid-template-columns: 20px auto 400px 20px;
     grid-auto-rows: minmax(100px, auto);
 }
 .mainbox {
-grid-column: 2/3;
+grid-column: 2/4;
 grid-row: 1;
 margin-top: 50px;
 }
 .secondbox {
-grid-column: 2/3;
+grid-column: 2/4;
 grid-row: 2;
+}
+.textClimbingWall {
+grid-column: 2/3;
+grid-row: 1;
+margin-top: 50px;
+margin-right: 20px;
+}
+.picutreClimbingWall {
+grid-column: 3/4;
+grid-row: 1;
+margin-top: 50px;
+}
+
+/* Scaling of all pages */
+.menyButtonContainer {
+    display: none;
+}
+.burgerToggle {
+    display: none;
+}
+@media(max-width: 840px) {
+    .textClimbingWall {
+        grid-column: 2/4;
+        grid-row: 1;
+    }
+    .picutreClimbingWall {
+        grid-column: 2/5;
+        grid-row: 2;
+        margin-top: 0px;
+    }
+    .navbar {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: top;
+        height: 40px;
+        background-color: aqua;
+    }
+    .menyButtonContainer {
+        display: flex;
+        height: auto;
+        width: 40px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menyButton, .menyButton::before, .menyButton::after {
+        display: block;
+        /* background-image: ; */
+        background-size: cover;
+        position: absolute;
+        height: 40px;
+        width: 40px;
+    }
+    .burgerToggle+.menyButtonContainer {
+        margin: 0px;
+    }
+    .navbar ul {
+        position: sticky;
+        margin-top: 0px;
+        flex-direction: column;
+        height: 220px;
+        justify-content: center;
+        align-content: initial;
+    }
+    .navbar ul li {
+        overflow: hidden;
+        display: flex;
+        margin: 0px;
+        width: 100vw;
+        background-color: white;   
+    }
+    .burgerToggle ~ .navbar ul li {
+        height: 0px;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+    .burgerToggle:checked ~ .navbar ul li {
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        height: 1em;
+        padding: 0.5em;
+    }
 }
 
 /* Css for navbar */
