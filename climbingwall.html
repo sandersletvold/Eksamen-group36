@@ -9,11 +9,11 @@
 <body>
     <header>
         <nav class="navbar">
-            <input id="burgerToggle" type="checkbox">
-            <label class="menyButtonContainer" for="burger-Toggle">
-                <div class="menyButton"></div>
-            </label>
-            <ul>
+            <input id="burger-toggle" type="checkbox" /> <!-- Hide/Show "Hamburger menu" -->
+                <label class='menu-button-container' for="burger-toggle"> <!-- "flex" if media-query TRUE -->
+                    <div class='menu-button'></div>
+                </label>
+            <ul class="menu">
                 <li>
                     <a href="index.html">Introduction</a>
                 </li>
@@ -26,8 +26,8 @@
                 <li>
                     <a href="lecturehall.html">Lecture hall</a>
                 </li>
-                <li class="active">
-                    <a href="climbingwall.html">Climbing wall</a>
+                <li>
+                    <a class="active" href="climbingwall.html">Climbing wall</a>
                 </li>
             </ul>
         </nav>
@@ -43,7 +43,7 @@
                 placerat, sem purus cursus lectus, dictum vehicula sem justo non ipsum.
             </p>
         </div>
-        <div class="picutreClimbingWall">
+        <div class="pictureClimbingWall">
             <h2>Underoverskrift</h2>
             <p>
                 Duis neque nunc, maximus a faucibus ac, porttitor non mi. Nullam posuere vestibulum massa, sed congue turpis 

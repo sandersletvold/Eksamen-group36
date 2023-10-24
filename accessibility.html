@@ -9,12 +9,16 @@
 <body>
     <header>
         <nav class="navbar">
-            <ul>
+            <input id="burger-toggle" type="checkbox" /> <!-- Hide/Show "Hamburger menu" -->
+                <label class='menu-button-container' for="burger-toggle"> <!-- "flex" if media-query TRUE -->
+                    <div class='menu-button'></div>
+                </label>
+            <ul class="menu">
                 <li>
                     <a href="index.html">Introduction</a>
                 </li>
-                <li class="active">
-                    <a href="accessibility.html">Accessibility</a>
+                <li>
+                    <a class="active" href="accessibility.html">Accessibility</a>
                 </li>
                 <li>
                     <a href="topical.html">Topical</a>

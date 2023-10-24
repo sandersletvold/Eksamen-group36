@@ -11,55 +11,79 @@ body {
     grid-auto-rows: minmax(100px, auto);
 }
 .mainbox {
-grid-column: 2/4;
-grid-row: 1;
-margin-top: 50px;
+    grid-column: 2/4;
+    grid-row: 1;
+    margin-top: 50px;
 }
 .secondbox {
-grid-column: 2/4;
-grid-row: 2;
+    grid-column: 2/4;
+    grid-row: 2;
 }
 .textClimbingWall {
-grid-column: 2/3;
-grid-row: 1;
-margin-top: 50px;
-margin-right: 20px;
+    grid-column: 2/3;
+    grid-row: 1;
+    margin-top: 50px;
+    margin-right: 20px;
 }
-.picutreClimbingWall {
-grid-column: 3/4;
-grid-row: 1;
-margin-top: 50px;
+.pictureClimbingWall {
+    grid-column: 3/4;
+    grid-row: 1;
+    margin-top: 50px;
 }
 
 /* Scaling of all pages */
-.menyButtonContainer {
+.menu {
+    display: flex; 
+    flex-direction: row; /* Wide screen: Menu items after each other on a horizontal line */
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    position: fixed;
+    background-color: orange;
+    height: 50px;
+    width: 100vw;
+    border: 0;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: black;
+}
+  
+.menu-button-container { /* Wide screen: Hide the burger-box! */
     display: none;
 }
-#burgerToggle {
+  
+#burger-toggle { /* Wide screen: Hide the burger-image! */
     display: none;
 }
-@media(max-width: 840px) {
+  
+.menu > li {
+    padding-left: 20px;
+    padding-top: 15px;
+}
+  
+@media (max-width: 700px) {
     .textClimbingWall {
         grid-column: 2/4;
         grid-row: 1;
     }
-    .picutreClimbingWall {
-        grid-column: 2/5;
+    .pictureClimbingWall {
+        grid-column: 2/4;
         grid-row: 2;
         margin-top: 0px;
-    }
+    }  
     .navbar {
-        width: 100vw;
-        background-color: orange;
-        margin-left: -8px;
-        padding-left: 8px;  
-
         display: flex;
+        width: 100vw;
         flex-direction: row;
         align-items: top;
-        height: 40px;
-    }
-    .menyButtonContainer {
+        height: 50px;
+        background-color: orange;
+        padding-left: 15px;
+      }
+    .menu-button-container {
         display: flex;
         height: auto;
         width: 40px;
@@ -67,78 +91,67 @@ margin-top: 50px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    .menyButton,
-    .menyButton::before,
-    .menyButton::after {
+      }
+  
+    .menu-button,
+    .menu-button::before,
+    .menu-button::after {
         display: block;
-        background-image:url(../media/burger.png);
-        background-size: cover;
+        background-image: url(../media/burger.png);
+        background-size: cover; /* "cover" stretch image to fill box */
         position: absolute;
         height: 40px;
         width: 40px;
     }
-    #burgerToggle + .menyButtonContainer {
+      
+    #burger-toggle + .menu-button-container {
         margin: 0px;
     }
-    .navbar ul {
+  
+    .menu {
         position: sticky;
-        margin-top: 0px;
-        flex-direction: column;
-        height: auto;
+        margin-top: -30px; /* postitions pop-up menu _relative_ to the hamburger */
+        margin-left: 15px; 
+        flex-direction: column; /* stacks the menu-entries beneath each other */
+        height: 220px;
         justify-content: center;
         align-content: initial;
     }
-    .navbar li {
-        overflow: hidden;
+  
+    .menu > li {
+        overflow: hidden; /* Hide menu 'li' text unless burger (input) checked */
         display: flex;
-        margin: 0px;
-        background-color: orange;   
+        margin: 0;
+        width: 200px; /* Width of menu. For mobile, maybe 100 % had been better?? */
+        background-color: orange; /* Without bg-colour, text underneath the menu is _not_ covered */
     }
-    #burgerToggle ~ .navbar li {
-        height: 0px;
-        margin: 0px;
-        padding: 0px;
-        border: 0px;
+  
+    #burger-toggle ~ .menu li { /* Before you click: Hidden */ /* ~ is a "general sibling selector"  */
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
     }
-    #burgerToggle:checked ~ .navbar li {
+  
+    #burger-toggle:checked ~ .menu li { /* After you click: Display */
         border-width: 1px;
+        border-top: 0px;
         border-style: solid;
-        border-color: black;
+        border-color: #333;
         height: 1em;
         padding: 0.5em;
     }
-}
-
-/* Css for navbar */
-.navbar {
-    position: fixed;
-    background-color: orange;
-    width: 100vw;
-    height: 40px;
-}
-.navbar li {
-    display: inline-block;
-    margin-right: 25px;
-}
-.navbar ul{
-display: flex;
-flex-direction: row;
-justify-content: flex-start;
-list-style-type: none;
-margin: 0px;
-padding: 0px;
-}
-.navbar a {
-    font-weight: bold;
-    font-size: large;
-    text-decoration: none;
-    color: black;
 }
 .navbar a:hover {
     color: white;
     transition-duration: 250ms;
 }
-.active a {
+.navbar li a{
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+.navbar li a.active {
     color: white;
 }
