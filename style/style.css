@@ -35,7 +35,7 @@ margin-top: 50px;
 .menyButtonContainer {
     display: none;
 }
-.burgerToggle {
+#burgerToggle {
     display: none;
 }
 @media(max-width: 840px) {
@@ -50,11 +50,14 @@ margin-top: 50px;
     }
     .navbar {
         width: 100vw;
+        background-color: orange;
+        margin-left: -8px;
+        padding-left: 8px;  
+
         display: flex;
         flex-direction: row;
         align-items: top;
         height: 40px;
-        background-color: aqua;
     }
     .menyButtonContainer {
         display: flex;
@@ -65,39 +68,40 @@ margin-top: 50px;
         justify-content: center;
         align-items: center;
     }
-    .menyButton, .menyButton::before, .menyButton::after {
+    .menyButton,
+    .menyButton::before,
+    .menyButton::after {
         display: block;
-        /* background-image: ; */
+        background-image:url(../media/burger.png);
         background-size: cover;
         position: absolute;
         height: 40px;
         width: 40px;
     }
-    .burgerToggle+.menyButtonContainer {
+    #burgerToggle + .menyButtonContainer {
         margin: 0px;
     }
     .navbar ul {
         position: sticky;
         margin-top: 0px;
         flex-direction: column;
-        height: 220px;
+        height: auto;
         justify-content: center;
         align-content: initial;
     }
-    .navbar ul li {
+    .navbar li {
         overflow: hidden;
         display: flex;
         margin: 0px;
-        width: 100vw;
-        background-color: white;   
+        background-color: orange;   
     }
-    .burgerToggle ~ .navbar ul li {
+    #burgerToggle ~ .navbar li {
         height: 0px;
         margin: 0px;
         padding: 0px;
         border: 0px;
     }
-    .burgerToggle:checked ~ .navbar ul li {
+    #burgerToggle:checked ~ .navbar li {
         border-width: 1px;
         border-style: solid;
         border-color: black;
@@ -111,10 +115,19 @@ margin-top: 50px;
     position: fixed;
     background-color: orange;
     width: 100vw;
+    height: 40px;
 }
 .navbar li {
     display: inline-block;
     margin-right: 25px;
+}
+.navbar ul{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+list-style-type: none;
+margin: 0px;
+padding: 0px;
 }
 .navbar a {
     font-weight: bold;
