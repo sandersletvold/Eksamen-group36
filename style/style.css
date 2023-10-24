@@ -4,7 +4,7 @@ body {
     margin-top: 0px;
 }
 
-/* Grid for all pages*/
+/* Grid for all pages except for climbingwall.html*/
 .wrapper {
     display: grid;
     grid-template-columns: 20px auto 400px 20px;
@@ -19,6 +19,7 @@ body {
     grid-column: 2/4;
     grid-row: 2;
 }
+/*Her definerer vi boksene som vi har tekst og bilde i på climbingwall.html*/
 .textClimbingWall {
     grid-column: 2/3;
     grid-row: 1;
@@ -32,6 +33,8 @@ body {
 }
 
 /* Scaling of all pages */
+/* Her starter koden som er tatt fra eksempelet til Tengel!
+    Koden er endret på flere steder for å passe siden vår*/
 .menu {
     display: flex; 
     flex-direction: row; /* Wide screen: Menu items after each other on a horizontal line */
@@ -63,8 +66,9 @@ body {
     padding-left: 20px;
     padding-top: 15px;
 }
-  
+  /* Media query for scaling av hamburger meny, og for å endre side oppsettet på climbingwall.html*/
 @media (max-width: 700px) {
+    /*Her er scalingen til siden for å flytte bilde fra høyre til under teksten*/
     .textClimbingWall {
         grid-column: 2/4;
         grid-row: 1;
@@ -81,7 +85,7 @@ body {
         align-items: top;
         height: 50px;
         background-color: orange;
-        padding-left: 15px;
+        padding-left: 15px; /*Legger til padding til venstre for burgeren og til Introduction siden*/
       }
     .menu-button-container {
         display: flex;
@@ -114,7 +118,7 @@ body {
         margin-top: 50px; /* postitions pop-up menu _relative_ to the hamburger */
         margin-left: -55px; 
         flex-direction: column; /* stacks the menu-entries beneath each other */
-        height: 167px;
+        height: 167px;  /*Denne bestemmer hvor dropdown menyen dropper ned i forhold til burgeren*/
         justify-content: center;
         align-content: initial;
     }
@@ -144,6 +148,7 @@ body {
         padding: 0.5em;
     }
 }
+/* Her slutter koden som er tatt fra eksempelet til Tengel*/
 .navbar a:hover {
     color: white;
     transition-duration: 250ms;
