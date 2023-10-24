@@ -67,7 +67,7 @@ body {
     padding-top: 15px;
 }
   /* Media query for scaling av hamburger meny, og for å endre side oppsettet på climbingwall.html*/
-@media (max-width: 700px) {
+@media (max-width: 840px) {
     /*Her er scalingen til siden for å flytte bilde fra høyre til under teksten*/
     .textClimbingWall {
         grid-column: 2/4;
@@ -78,6 +78,8 @@ body {
         grid-row: 2;
         margin-top: 0px;
     }  
+}
+@media (max-width: 570px){
     .navbar {
         display: flex;
         width: 100vw;
