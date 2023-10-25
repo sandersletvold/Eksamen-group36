@@ -59,6 +59,10 @@ body {
     grid-column: 3/5;
     grid-row: 1;
 }
+.textUnderPicture {
+    grid-column: 2/4;
+    grid-row: 2;
+}
 #climbingWallPicture{
     height: 1020px;
     width: 510px;
@@ -102,7 +106,7 @@ body {
     padding-top: 15px;
 }
   /* Media query for scaling av hamburger meny, og for å endre side oppsettet på climbingwall.html*/
-@media (max-width: 1100px) {
+@media (max-width: 1020px) {
     /*Her er scalingen til siden for å flytte bilde fra høyre til under teksten*/
 
     .textClimbingWall {
@@ -113,6 +117,10 @@ body {
         grid-column: 2/4;
         grid-row: 2;
         margin-top: 0px;
+    }
+    .textUnderPicture {
+        grid-column: 2/4;
+        grid-row: 3;
     }  
     #climbingWallCropped{
         height: 350px;
