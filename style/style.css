@@ -8,7 +8,7 @@ body {
 /* Grid for all pages except for climbingwall.html*/
 .wrapper {
     display: grid;
-    grid-template-columns: 20px auto 400px 20px;
+    grid-template-columns: 20px auto 525px 20px;
     grid-auto-rows: minmax(100px, auto);
 }
 .mainbox {
@@ -30,7 +30,10 @@ body {
 .pictureClimbingWall {
     grid-column: 3/5;
     grid-row: 1;
-    margin-top: 50px;
+}
+#climbingWallPicture{
+    height: 1600px;
+    width: 555px;
 }
 
 /* Scaling of all pages */
@@ -68,7 +71,7 @@ body {
     padding-top: 15px;
 }
   /* Media query for scaling av hamburger meny, og for å endre side oppsettet på climbingwall.html*/
-@media (max-width: 840px) {
+@media (max-width: 1100px) {
     /*Her er scalingen til siden for å flytte bilde fra høyre til under teksten*/
     .textClimbingWall {
         grid-column: 2/4;
@@ -79,6 +82,10 @@ body {
         grid-row: 2;
         margin-top: 0px;
     }  
+    #climbingWallPicture{
+        height: 350px;
+        width: 555px;
+    }
 }
 @media (max-width: 615px){
     .navbar {
