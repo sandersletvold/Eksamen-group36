@@ -5,10 +5,13 @@ body {
     font-family: sans-serif;
 }
 
-/* Scaling of pictures */
+/* Pictures */
 #fakeNews {
     height: 500px;
     width: 750px;
+}
+.photographer {
+    font-size: small;
 }
 #pictureOfOslomet {
     height: 500px;
