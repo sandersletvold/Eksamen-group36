@@ -8,7 +8,7 @@ body {
 /* Grid for all pages except for climbingwall.html*/
 .wrapper {
     display: grid;
-    grid-template-columns: 20px auto 400px 20px;
+    grid-template-columns: 100px auto 400px 100px;
     grid-auto-rows: minmax(100px, auto);
 }
 .mainbox {
