@@ -35,6 +35,9 @@ body {
     height: 1600px;
     width: 555px;
 }
+#climbingWallCropped {
+    display: none;
+}
 
 /* Scaling of all pages */
 /* Her starter koden som er tatt fra eksempelet til Tengel!
@@ -73,6 +76,7 @@ body {
   /* Media query for scaling av hamburger meny, og for å endre side oppsettet på climbingwall.html*/
 @media (max-width: 1100px) {
     /*Her er scalingen til siden for å flytte bilde fra høyre til under teksten*/
+
     .textClimbingWall {
         grid-column: 2/4;
         grid-row: 1;
@@ -82,9 +86,13 @@ body {
         grid-row: 2;
         margin-top: 0px;
     }  
-    #climbingWallPicture{
+    #climbingWallCropped{
         height: 350px;
         width: 555px;
+        display: block;
+    }
+    #climbingWallPicture {
+        display: none;
     }
 }
 @media (max-width: 615px){
