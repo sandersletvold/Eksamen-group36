@@ -5,6 +5,24 @@ body {
     font-family: sans-serif;
 }
 
+/* Scaling of pictures */
+#fakeNews {
+    height: 500px;
+    width: 750px;
+}
+#pictureOfOslomet {
+    height: 500px;
+    width: 750px;
+}
+#auditorium {
+    height: 500px;
+    width: 750px;
+}
+#auditoriumAndre {
+    height: 750px;
+    width: 500px;
+}
+
 /* Grid for all pages except for climbingwall.html*/
 .wrapper {
     display: grid;
@@ -19,6 +37,16 @@ body {
 .secondbox {
     grid-column: 2/4;
     grid-row: 2;
+}
+.lectureHallRight {
+    grid-column: 3/4;
+    grid-row: 2;
+    margin-top: 50px;
+}
+.lectureHallLeft {
+    grid-column: 2/3;
+    grid-row: 2;
+    margin-top: 50px;
 }
 /*Her definerer vi boksene som vi har tekst og bilde i på climbingwall.html*/
 .textClimbingWall {
@@ -38,10 +66,7 @@ body {
 #climbingWallCropped {
     display: none;
 }
-#fakeNews {
-    height: 500px;
-    width: 750px;
-}
+
 /* Scaling of all pages */
 /* Her starter koden som er tatt fra eksempelet til Tengel!
     Koden er endret på flere steder for å passe siden vår*/
