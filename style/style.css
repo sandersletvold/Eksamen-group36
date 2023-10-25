@@ -38,6 +38,10 @@ body {
 #climbingWallCropped {
     display: none;
 }
+#fakeNews {
+    height: 500px;
+    width: 800px;
+}
 
 /* Scaling of all pages */
 /* Her starter koden som er tatt fra eksempelet til Tengel!
