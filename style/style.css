@@ -8,9 +8,6 @@ body {
     font-size: small;
     color: rgb(86, 86, 86);
 }
-.paragraphs {
-    /* Ikke sikkert vi trenger noe her */
-}
 .mainHeadings {
     font-size: 2rem;
 }
@@ -45,12 +42,12 @@ body {
     grid-template-columns: 8vw auto 400px 8vw;
     grid-auto-rows: minmax(100px, auto);
 }
-.mainbox {
+.mainBox {
     grid-column: 2/4;
     grid-row: 1;
     margin-top: 50px;
 }
-.secondbox {
+.secondBox {
     grid-column: 2/4;
     grid-row: 2;
 }
@@ -126,11 +123,11 @@ body {
     border-color: black;
 }
   
-.menu-button-container { /* Wide screen: Hide the burger-box! */
+.menuButtonContainer { /* Wide screen: Hide the burger-box! */
     display: none;
 }
   
-#burger-toggle { /* Wide screen: Hide the burger-image! */
+#burgerToggle { /* Wide screen: Hide the burger-image! */
     display: none;
 }
   
@@ -178,7 +175,7 @@ body {
         background-color: orange;
         padding-left: 15px; /*Legger til padding til venstre for burgeren og til Introduction siden*/
       }
-    .menu-button-container {
+    .menuButtonContainer {
         display: flex;
         height: auto;
         width: 40px;
@@ -189,9 +186,9 @@ body {
         align-items: center;
       }
   
-    .menu-button,
-    .menu-button::before,
-    .menu-button::after {
+    .menuButton,
+    .menuButton::before,
+    .menuButton::after {
         display: block;
         background-image: url(../media/hamburgermeny.png);
         background-size: cover; /* "cover" stretch image to fill box */
@@ -200,7 +197,7 @@ body {
         width: 40px;
     }
       
-    #burger-toggle + .menu-button-container {
+    #burgerToggle + .menuButtonContainer {
         margin: 0px;
     }
   
@@ -222,14 +219,14 @@ body {
         background-color: orange; /* Without bg-colour, text underneath the menu is _not_ covered */
     }
   
-    #burger-toggle ~ .menu li { /* Before you click: Hidden */ /* ~ is a "general sibling selector"  */
+    #burgerToggle ~ .menu li { /* Before you click: Hidden */ /* ~ is a "general sibling selector"  */
         height: 0;
         margin: 0;
         padding: 0;
         border: 0;
     }
   
-    #burger-toggle:checked ~ .menu li { /* After you click: Display */
+    #burgerToggle:checked ~ .menu li { /* After you click: Display */
         border: 1px;
         border-top: 0px;
         border-left: 0px;
