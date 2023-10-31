@@ -145,6 +145,7 @@ body {
     .textClimbingWall {
         grid-column: 2/4;
         grid-row: 1;
+        margin-right: 0px;
     }
     .pictureClimbingWall {
         grid-column: 2/4;
