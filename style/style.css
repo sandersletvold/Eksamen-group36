@@ -65,15 +65,14 @@ body {
     grid-column: 3/4;
     grid-row: 2;
     margin-top: 40px;
-    margin-left: 130px;
+    margin-left: 105px;
 }
 /* Create a grid layout for the footer */
 .footerWrapper {
     display: grid;
     grid-template-columns: 20vw auto 20vw;
     background-color: rgb(54, 54, 54);
-    margin-bottom: 0px;
-    width: 100vw;
+    margin: 0px;
 }
 /* Apply grid styles to the footer content */
 .footer {
