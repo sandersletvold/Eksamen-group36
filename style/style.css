@@ -56,12 +56,12 @@ body {
     grid-column: 2/4;
     grid-row: 2;
 }
-.lectureHallText {
+#lectureHallText {
     grid-column: 2/3;
     grid-row: 2;
     margin-top: 20px;
 }
-.lectureHallPicture {
+#lectureHallPicture {
     grid-column: 3/4;
     grid-row: 2;
     margin-top: 40px;
@@ -247,7 +247,7 @@ body {
     color: white;
     transition-duration: 250ms;
 }
-.navbar li a{ /*Styles for links*/
+.navbar li a { /*Styles for links*/
     font-weight: bold;
     font-size: large;
     text-decoration: none;
