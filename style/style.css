@@ -43,7 +43,7 @@ body {
 /* Create a grid layout for most pages (except climbingwall.html) */
 .wrapper {
     display: grid;
-    grid-template-columns: 8vw auto 400px 8vw;
+    grid-template-columns: 8vw 47vw 37vw 8vw;
     grid-auto-rows: minmax(100px, auto);
 }
 /* Apply grid styles to the main content box */
@@ -56,17 +56,16 @@ body {
     grid-column: 2/4;
     grid-row: 2;
 }
-.lectureHallText {
+#lectureHallText {
     grid-column: 2/3;
     grid-row: 2;
     margin-top: 20px;
-    margin-right: 100px;
 }
-.lectureHallPicture {
+#lectureHallPicture {
     grid-column: 3/4;
     grid-row: 2;
     margin-top: 40px;
-    margin-right: 100px;
+    margin-left: 130px;
 }
 /* Create a grid layout for the footer */
 .footerWrapper {
@@ -247,7 +246,7 @@ body {
     color: white;
     transition-duration: 250ms;
 }
-.navbar li a{ /*Styles for links*/
+.navbar li a { /*Styles for links*/
     font-weight: bold;
     font-size: large;
     text-decoration: none;
