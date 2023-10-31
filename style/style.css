@@ -4,6 +4,10 @@ body {
     margin-top: 0px;
     font-family: sans-serif;
 }
+.photograph {
+    font-size: small;
+    color: rgb(86, 86, 86);
+}
 
 /* Pictures */
 #fakeNews {
@@ -22,8 +26,8 @@ body {
     width: 750px;
 }
 #auditoriumAndre {
-    height: 750px;
-    width: 500px;
+    height: 600px;
+    width: 400px;
 }
 
 /* Grid for all pages except for climbingwall.html*/
@@ -41,15 +45,17 @@ body {
     grid-column: 2/4;
     grid-row: 2;
 }
-.lectureHallRight {
-    grid-column: 3/4;
-    grid-row: 2;
-    margin-top: 50px;
-}
 .lectureHallLeft {
     grid-column: 2/3;
     grid-row: 2;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+.lectureHallRight {
+    grid-column: 3/4;
+    grid-row: 2;
+    margin-top: 40px;
+    margin-right: 100px;
 }
 /*Her definerer vi boksene som vi har tekst og bilde i på climbingwall.html*/
 .textClimbingWall {
