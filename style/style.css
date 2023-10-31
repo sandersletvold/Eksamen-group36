@@ -1,12 +1,21 @@
 /* Generell css */
 body {
-    margin-left: 0px;
-    margin-top: 0px;
+    margin: 0px;
     font-family: sans-serif;
+    background-color: rgb(245, 249, 255);
 }
 .photograph {
     font-size: small;
     color: rgb(86, 86, 86);
+}
+.paragraphs {
+    /* Ikke sikkert vi trenger noe her */
+}
+.mainHeadings {
+    font-size: 2rem;
+}
+.secondaryHeadings {
+    font-size: 1.6rem;
 }
 
 /* Pictures */
@@ -56,6 +65,21 @@ body {
     grid-row: 2;
     margin-top: 40px;
     margin-right: 100px;
+}
+.footerWrapper {
+    display: grid;
+    grid-template-columns: 20vw auto 20vw;
+    background-color: rgb(54, 54, 54);
+    margin-bottom: 0px;
+    width: 100vw;
+}
+.footer {
+    grid-column: 2/3;
+    grid-row: auto;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 /*Her definerer vi boksene som vi har tekst og bilde i på climbingwall.html*/
 .textClimbingWall {
