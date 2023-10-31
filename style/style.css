@@ -1,4 +1,4 @@
-/* Generell css */
+/* Set the default styles for the entire page */
 body {
     margin: 0px;
     font-family: sans-serif;
@@ -15,7 +15,7 @@ body {
     font-size: 1.6rem;
 }
 
-/* Pictures */
+/* Define size for specific pictures by their IDs */
 #fakeNews {
     height: 500px;
     width: 750px;
@@ -36,12 +36,13 @@ body {
     width: 400px;
 }
 
-/* Grid for all pages except for climbingwall.html*/
+/* Create a grid layout for most pages (except climbingwall.html) */
 .wrapper {
     display: grid;
     grid-template-columns: 8vw auto 400px 8vw;
     grid-auto-rows: minmax(100px, auto);
 }
+/* Apply grid styles to the main content box */
 .mainBox {
     grid-column: 2/4;
     grid-row: 1;
@@ -51,6 +52,7 @@ body {
     grid-column: 2/4;
     grid-row: 2;
 }
+/* Define grid styles for the left and right lecture hall sections */
 .lectureHallLeft {
     grid-column: 2/3;
     grid-row: 2;
@@ -63,6 +65,7 @@ body {
     margin-top: 40px;
     margin-right: 100px;
 }
+/* Create a grid layout for the footer */
 .footerWrapper {
     display: grid;
     grid-template-columns: 20vw auto 20vw;
@@ -70,6 +73,7 @@ body {
     margin-bottom: 0px;
     width: 100vw;
 }
+/* Apply grid styles to the footer content */
 .footer {
     grid-column: 2/3;
     grid-row: auto;
@@ -78,7 +82,7 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-/*Her definerer vi boksene som vi har tekst og bilde i på climbingwall.html*/
+/* Define styles for elements on the climbingwall.html page */
 .textClimbingWall {
     grid-column: 2/3;
     grid-row: 1;
@@ -100,8 +104,6 @@ body {
 #climbingWallCropped {
     display: none;
 }
-
-/* Scaling of all pages */
 /* Her starter koden som er tatt fra eksempelet til Tengel!
     Koden er endret på flere steder for å passe siden vår*/
 .menu {
@@ -112,6 +114,7 @@ body {
     margin: 0;
     padding: 0;
 }
+/* Styling for the navigation bar at the top */
 .navbar{
     position: fixed;
     background-color: orange;
@@ -123,22 +126,21 @@ body {
     border-color: black;
 }
   
-.menuButtonContainer { /* Wide screen: Hide the burger-box! */
+.menuButtonContainer { /* Hide the burger-box on wide screens */
     display: none;
 }
   
-#burgerToggle { /* Wide screen: Hide the burger-image! */
+#burgerToggle { /* Hide the burger-image on wide screens */
     display: none;
 }
   
-.menu > li {
+.menu > li { /* Styling for menu items */
     padding-left: 20px;
     padding-top: 15px;
 }
-  /* Media query for scaling av hamburger meny, og for å endre side oppsettet på climbingwall.html*/
 @media (max-width: 1020px) {
-    /*Her er scalingen til siden for å flytte bilde fra høyre til under teksten*/
-
+    /* Styles for screens with a maximum width of 1020px */
+    /* Adjust layout for the climbingwall.html page */
     .textClimbingWall {
         grid-column: 2/4;
         grid-row: 1;
@@ -166,6 +168,7 @@ body {
     }
 }
 @media (max-width: 615px){
+    /* Media query for scaling of hamburger menu*/
     .navbar {
         display: flex;
         width: 100vw;
@@ -173,7 +176,7 @@ body {
         align-items: top;
         height: 50px;
         background-color: orange;
-        padding-left: 15px; /*Legger til padding til venstre for burgeren og til Introduction siden*/
+        padding-left: 15px; /*Adds padding from the burger to the links*/
       }
     .menuButtonContainer {
         display: flex;
@@ -237,16 +240,16 @@ body {
     }
 }
 /* Her slutter koden som er tatt fra eksempelet til Tengel*/
-.navbar a:hover {
+.navbar a:hover { /*Styles links to turn white while hovering*/
     color: white;
     transition-duration: 250ms;
 }
-.navbar li a{
+.navbar li a{ /*Styles for links*/
     font-weight: bold;
     font-size: large;
     text-decoration: none;
     color: black;
 }
-.navbar li a.active {
+.navbar li a.active { /*Style for link with the active class*/
     color: white;
 }
