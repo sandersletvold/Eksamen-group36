@@ -46,6 +46,12 @@ body {
     grid-template-columns: 8vw 47vw 37vw 8vw;
     grid-auto-rows: minmax(100px, auto);
 }
+.wrapperClimbingWall {
+    display: grid;
+    grid-template-columns: 50px auto 510px 50px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: rgb(105, 105, 105);
+}
 /* Apply grid styles to the main content box */
 .mainBox {
     grid-column: 2/4;
@@ -88,7 +94,7 @@ body {
     grid-column: 2/3;
     grid-row: 1;
     margin-top: 50px;
-    margin-right: 100px;
+    margin-right: 50px;
 }
 .pictureClimbingWall {
     grid-column: 3/5;
@@ -104,6 +110,9 @@ body {
 }
 #climbingWallCropped {
     display: none;
+}
+.climbingWallBackgroundColor {
+    background-color: rgb(187, 203, 255);
 }
 /* Her starter koden som er tatt fra eksempelet til Tengel!
     Koden er endret på flere steder for å passe siden vår*/
@@ -125,8 +134,7 @@ body {
     border-bottom: 1px;
     border-style: solid;
     border-color: black;
-}
-  
+} 
 .menuButtonContainer { /* Hide the burger-box on wide screens */
     display: none;
 }
@@ -139,9 +147,14 @@ body {
     padding-left: 20px;
     padding-top: 15px;
 }
-@media (max-width: 1020px) {
+@media (max-width: 1150px) {
     /* Styles for screens with a maximum width of 1020px */
     /* Adjust layout for the climbingwall.html page */
+    .wrapperClimbingWall {
+        display: grid;
+        grid-template-columns: 8vw 47vw 37vw 8vw;
+        grid-auto-rows: minmax(100px, auto);
+    }
     .textClimbingWall {
         grid-column: 2/4;
         grid-row: 1;
