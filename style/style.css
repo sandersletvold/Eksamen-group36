@@ -16,7 +16,7 @@ body {
     font-size: 1.6rem;
 }
 
-/* Defineing sizes of all pictures expect climbingWall.html */
+/* Defineing sizes of pictures */
 #fakeNews {
     height: 500px;
     width: 750px;
@@ -69,6 +69,57 @@ body {
     margin-top: 40px;
     margin-left: 105px;
 }
+#lectureHallTextBottom {
+    grid-column: 2/3;
+    grid-row: 3;
+    margin-top: -325px;
+}
+
+/* Media query for lectureHall.html */
+@media (max-width: 1175px) {
+    #auditoriumVertical {
+        height: 400px;
+        width: 264px;
+    }
+    #lectureHallTextBottom {
+        grid-column: 2/4;
+        grid-row: 3;
+        margin-top: -25px;
+    }
+}
+
+/* Media query for all pages except climbingWall.html */
+@media (max-width: 850px) {
+    #lectureHallPicture {
+        grid-column: 2/3;
+        grid-row: 2;
+    }
+    #lectureHallText {
+        grid-column: 2/4;
+        grid-row: 3;
+    }
+    #lectureHallTextBottom {
+        grid-column: 2/4;
+        grid-row: 4;
+        margin-top: 20px;
+    }
+    #fakeNews {
+        height: 330px;
+        width: 462px;
+    }
+    #pictureOfOslomet {
+        height: 330px;
+        width: 462px;
+    }
+    #auditoriumHorizontal {
+        height: 330px;
+        width: 462px;
+    }
+    #auditoriumVertical {
+        height: 400px;
+        width: 264px;
+    }
+}
 
 /* Grid layout for the footer */
 .footerWrapper {
@@ -114,13 +165,6 @@ body {
 }
 
 /* Default styles for climbingWall.html */
-#climbingWallPicture {
-    height: 1020px;
-    width: 510px;
-}
-#climbingWallCropped {
-    display: none;
-}
 .climbingWallBackgroundColor {
     background-color: rgb(56, 56, 56);
     padding: 15px;
@@ -186,7 +230,7 @@ body {
     padding-top: 15px;
 }
 
-/* Styles for screens with a maximum width of 1150px */
+/* Media query for climbingWall.html */
 @media (max-width: 1150px) {
     .wrapperClimbingWall {
         display: grid;
