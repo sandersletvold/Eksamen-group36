@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
+    <header> <!-- Semantic element for declaring the start of introductory content -->
+        <nav class="navbar"> <!-- Semantic element for declaring this block as navigation -->
+            <!-- This marks the start of code we have taken from Tengel's example -->
             <input id="burgerToggle" type="checkbox" /> <!-- Hide/Show "Hamburger menu" -->
                 <label class="menuButtonContainer" for="burgerToggle"> <!-- "flex" if media-query TRUE -->
                     <div class="menuButton"></div>
                 </label>
             <ul class="menu">
+            <!-- This marks the end of code we have taken from Tengel's example -->
                 <li>
                     <a href="index.html">Introduction</a>
                 </li>
@@ -32,8 +34,8 @@
             </ul>
         </nav>
     </header>
-<article>
-    <main class="wrapperClimbingWall">
+<article> <!-- Semantic element for declaring the start of our article -->
+    <main class="wrapperClimbingWall"> <!-- Semantic element for declaring the main content for climbingWall.html -->
         <div class="textClimbingWall">
             <h1 id="climbingWallMainHeading">Indoor Climbing Walls: Scaling New Heights in Adventure</h1>
             <p class="climbingWallBackgroundColor">
@@ -47,15 +49,15 @@
             <p class="climbingWallBackgroundColor">
                 The origins of indoor climbing walls can be traced back to the early 1960s when climbers in the UK began constructing 
                 small-scale climbing structures for training during inclement weather. These rudimentary walls were primarily made
-                 of wooden boards and nails, serving as a way to hone climbing skills when outdoor conditions were unfavorable. 
-                 Over the years, the concept of indoor climbing evolved, leading to the creation of dedicated climbing gyms and 
-                 state-of-the-art climbing walls.
-                 <br>
-                 The rapid growth of indoor climbing can be attributed to several factors. First and foremost,
-                 it offers a controlled environment that is accessible year-round. Climbers are not dependent on favorable 
-                 weather conditions, making it a convenient way to enjoy the sport. Furthermore, climbing walls provide a 
-                 safe and supervised space for both beginners and experienced climbers. With trained staff and stringent 
-                 safety measures, the risk associated with outdoor climbing is significantly reduced.
+                of wooden boards and nails, serving as a way to hone climbing skills when outdoor conditions were unfavorable. 
+                Over the years, the concept of indoor climbing evolved, leading to the creation of dedicated climbing gyms and 
+                state-of-the-art climbing walls.
+                <br>
+                The rapid growth of indoor climbing can be attributed to several factors. First and foremost,
+                it offers a controlled environment that is accessible year-round. Climbers are not dependent on favorable 
+                weather conditions, making it a convenient way to enjoy the sport. Furthermore, climbing walls provide a 
+                safe and supervised space for both beginners and experienced climbers. With trained staff and stringent 
+                safety measures, the risk associated with outdoor climbing is significantly reduced.
             </p>
             <h2 class="climbingWallSecondaryHeadings">The Climbing Experience</h2>
             <p class="climbingWallBackgroundColor">
@@ -78,7 +80,7 @@
             </p>
         </div>
         <div class="pictureClimbingWall">
-            <!-- The picture is taken ourself -->
+            <!-- Private photo, Sander Sletvold -->
             <img id="climbingWallPicture" src="media/climbingWallv2.jpg" alt="A picture of the climbing wall in P35, OsloMet.">
             <img id="climbingWallCropped" src="media/climbingWallCropped.jpg" alt="A cropped picture of the climbing wall in P35, OsloMet.">
             <p id="photographerClimbingWall">Photo: Sander Sletvold</p>
@@ -99,10 +101,12 @@
         </div>
     </main>
 </article>
-<footer id="footerWrapperClimbingWall">
+<footer id="footerWrapperClimbingWall"> <!-- Semantic element for declaring the start to climbingWall.html's unique footer -->
     <div class="footer">
         <p>
             DATA1200 Exam
+            <br>
+            Website created by
         </p>
         <p>
             Sander Sletvold

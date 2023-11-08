@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
+    <header> <!-- Semantic element for declaring the start of introductory content -->
+        <nav class="navbar"> <!-- Semantic element for declaring this block as navigation -->
+            <!-- This marks the start of code we have taken from Tengel's example -->
             <input id="burgerToggle" type="checkbox" /> <!-- Hide/Show "Hamburger menu" -->
                 <label class="menuButtonContainer" for="burgerToggle"> <!-- "flex" if media-query TRUE -->
                     <div class="menuButton"></div>
                 </label>
             <ul class="menu">
+            <!-- This marks the end of code we have taken from Tengel's example -->
                 <li>
                     <a href="index.html">Introduction</a>
                 </li>
@@ -32,11 +34,12 @@
             </ul>
         </nav>
     </header>
-<article>
-    <main class="wrapper">
+<article> <!-- Semantic element for declaring the start of our article -->
+    <main class="wrapper"> <!-- Semantic element for declaring the main content -->
         <div class="mainBox">
             <h1 class="mainHeadings">Fake News and Critical Thinking</h1>
-            <!-- The picture is from: https://unsplash.com/photos/man-sitting-on-chair-holding-newspaper-on-fire-FPNnKfjcbNU -->
+            <!-- The picture is taken from: https://unsplash.com/photos/man-sitting-on-chair-holding-newspaper-on-fire-FPNnKfjcbNU 
+                 Free to use under the Unsplash licence: https://unsplash.com/license -->
             <img id="fakeNews" src="media/fakeNews.jpg" alt="A person holding a burning newspaper">
             <p class="photographer">Photo: Nijwam Swargiary</p>
             <p>
@@ -58,7 +61,7 @@
             Artificial intelligence can also help spread a lot of misinformation,
             such as deepfakes, manipulated videos and, for example,
             the general election we will have in 2025.
-            <a href = "https://ai100.stanford.edu/gathering-strength-gathering-storms-one-hundred-year-study-artificial-intelligence-ai100-2021-1-0#misinformation">Stanford University issued an statment</a>,
+            <a href ="https://ai100.stanford.edu/gathering-strength-gathering-storms-one-hundred-year-study-artificial-intelligence-ai100-2021-1-0#misinformation">Stanford University issued an statement</a>,
             as the following states "Technology can be taken over by criminals,
             rogue states, ideological extremists or simply special interest groups,
             in order to manipulate people for financial gain or political advantage",
@@ -82,7 +85,7 @@
         </div>
     </main>
 </article>
-<footer class="footerWrapper">
+<footer class="footerWrapper"> <!-- Semantic element for declaring the start to the footer -->
     <div class="footer">
         <p>
             DATA1200 Exam
