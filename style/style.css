@@ -339,7 +339,7 @@ body {
 }
 
 /* Media query for mobile view */
-@media (orientation: portrait) and (min-width: 401px) and (max-width: 550px) {
+@media (min-width: 401px) and (max-width: 550px) {
     #fakeNews {
         height: 221px;
         width: 333px;
@@ -358,7 +358,7 @@ body {
     }
 }
 
-@media (orientation: portrait) and (max-width: 400px) {
+@media (max-width: 400px) {
     #fakeNews {
         height: 166px;
         width: 250px;
