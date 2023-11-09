@@ -261,7 +261,7 @@ body {
         margin-top: 50px; /* Postitions pop-up menu relative to the hamburger */
         margin-left: -55px; 
         flex-direction: column; /* Stacks the menu-entries beneath each other */
-        height: 167px; /* Determines the position of the dropdown meny relative to the burger */
+        height: 164px; /* Determines the position of the dropdown meny relative to the burger */
         justify-content: center;
         align-content: initial;
     }
@@ -321,24 +321,24 @@ body {
         margin-top: 20px;
     }
     #fakeNews {
-        height: 276px;
-        width: 416px;
+        height: 298px;
+        width: 450px;
     }
     #pictureOfOslomet {
-        height: 279px;
-        width: 416px;
+        height: 301px;
+        width: 450px;
     }
     #auditoriumHorizontal {
-        height: 276px;
-        width: 416px;
+        height: 298px;
+        width: 450px;
     }
     #auditoriumVertical {
         height: 393px;
         width: 264px;
     }
     #climbingWallCropped {
-        height: 307px;
-        width: 462px;
+        height: 298px;
+        width: 450px;
     }
 }
 
