@@ -75,69 +75,6 @@ body {
     margin-top: -325px;
 }
 
-/* Media query for lectureHall.html */
-@media (max-width: 1175px) {
-    #auditoriumVertical {
-        height: 393px;
-        width: 264px;
-    }
-    #lectureHallTextBottom {
-        grid-column: 2/4;
-        grid-row: 3;
-        margin-top: -25px;
-    }
-}
-
-/* Media query for all pages except climbingWall.html */
-@media (max-width: 850px) {
-    #lectureHallPicture {
-        grid-column: 2/3;
-        grid-row: 2;
-        margin-left: 0px;
-    }
-    #lectureHallText {
-        grid-column: 2/4;
-        grid-row: 3;
-    }
-    #lectureHallTextBottom {
-        grid-column: 2/4;
-        grid-row: 4;
-        margin-top: 20px;
-    }
-    #fakeNews {
-        height: 307px;
-        width: 462px;
-    }
-    #pictureOfOslomet {
-        height: 310px;
-        width: 462px;
-    }
-    #auditoriumHorizontal {
-        height: 307px;
-        width: 462px;
-    }
-    #auditoriumVertical {
-        height: 393px;
-        width: 264px;
-    }
-}
-
-/* Media query for mobile view */
-@media (orientation: portrait), (max-width: 550px) {
-    #fakeNews {
-        height: 221px;
-        width: 333px;
-    }
-    #pictureOfOslomet {
-        height: 223px;
-        width: 333px;
-    }
-    #auditoriumHorizontal {
-        height: 221px;
-        width: 333px;
-    }
-}
-
 /* Grid layout for the footer */
 .footerWrapper {
     display: grid;
@@ -269,8 +206,8 @@ body {
         grid-row: 3;
     }  
     #climbingWallCropped {
-        height: 350px;
-        width: 555px;
+        height: 500px;
+        width: 752px;
         display: block;
     }
     #climbingWallPicture {
@@ -349,6 +286,77 @@ body {
     }
 }
 /* This marks the end of code we have taken from Tengel's example */
+
+/* Media query for lectureHall.html */
+@media (max-width: 1175px) {
+    #auditoriumVertical {
+        height: 393px;
+        width: 264px;
+    }
+    #lectureHallTextBottom {
+        grid-column: 2/4;
+        grid-row: 3;
+        margin-top: -25px;
+    }
+}
+
+/* Media query for all pages except climbingWall.html */
+@media (max-width: 850px) {
+    #lectureHallPicture {
+        grid-column: 2/3;
+        grid-row: 2;
+        margin-left: 0px;
+    }
+    #lectureHallText {
+        grid-column: 2/4;
+        grid-row: 3;
+    }
+    #lectureHallTextBottom {
+        grid-column: 2/4;
+        grid-row: 4;
+        margin-top: 20px;
+    }
+    #fakeNews {
+        height: 307px;
+        width: 462px;
+    }
+    #pictureOfOslomet {
+        height: 310px;
+        width: 462px;
+    }
+    #auditoriumHorizontal {
+        height: 307px;
+        width: 462px;
+    }
+    #auditoriumVertical {
+        height: 393px;
+        width: 264px;
+    }
+    #climbingWallCropped {
+        height: 307px;
+        width: 462px;
+    }
+}
+
+/* Media query for mobile view */
+@media (orientation: portrait), (max-width: 550px) {
+    #fakeNews {
+        height: 221px;
+        width: 333px;
+    }
+    #pictureOfOslomet {
+        height: 223px;
+        width: 333px;
+    }
+    #auditoriumHorizontal {
+        height: 221px;
+        width: 333px;
+    }
+    #climbingWallCropped {
+        height: 221px;
+        width: 333px;
+    }
+}
 
 /* Default navbar styling */
 .navbar a:hover { /* Styles links to turn white while hovering */
