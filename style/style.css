@@ -339,37 +339,7 @@ body {
 }
 
 /* Media query for mobile view */
-@media (orientation: portrait) and (max-width: 550) {
-    #fakeNews,
-    #pictureOfOslomet,
-    #auditoriumHorizontal,
-    #climbingWallCropped {
-        width: 100%; /* Take the full width of the container */
-        max-width: 92vw; /* Ensure images don't exceed their container */
-        height: auto; /* Maintain aspect ratio */
-    }
-}
-
-/* @media (orientation: portrait) and (max-width: 400px) {
-    #fakeNews {
-        height: 166px;
-        width: 250px;
-    }
-    #pictureOfOslomet {
-        height: 167px;
-        width: 250px;
-    }
-    #auditoriumHorizontal {
-        height: 166px;
-        width: 250px;
-    }
-    #climbingWallCropped {
-        height: 166px;
-        width: 250px;
-    }
-} */
-
-/* @media (orientation: portrait) and (max-width: 550px) {
+@media (orientation: portrait) and (min-width: 401px) and (max-width: 550px) {
     #fakeNews {
         height: 221px;
         width: 333px;
@@ -386,7 +356,26 @@ body {
         height: 221px;
         width: 333px;
     }
-} */
+}
+
+@media (orientation: portrait) and (max-width: 400px) {
+    #fakeNews {
+        height: 166px;
+        width: 250px;
+    }
+    #pictureOfOslomet {
+        height: 167px;
+        width: 250px;
+    }
+    #auditoriumHorizontal {
+        height: 166px;
+        width: 250px;
+    }
+    #climbingWallCropped {
+        height: 166px;
+        width: 250px;
+    }
+}
 
 /* Default navbar styling */
 .navbar a:hover { /* Styles links to turn white while hovering */
