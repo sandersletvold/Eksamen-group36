@@ -125,22 +125,16 @@ body {
 /* Media query for mobile view */
 @media (max-width: 550px) {
     #fakeNews {
-        /* height: 221px;
-        width: 333px; */
-        height: auto;
-        width: 84%;
+        height: 221px;
+        width: 333px;
     }
     #pictureOfOslomet {
-        /* height: 223px;
-        width: 333px; */
-        height: auto;
-        width: 84vw;
+        height: 223px;
+        width: 333px;
     }
     #auditoriumHorizontal {
-        /* height: 221px;
-        width: 333px; */
-        height: max-content;
-        width: 5vw;
+        height: 221px;
+        width: 333px;
     }
 }
 
