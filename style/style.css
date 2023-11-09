@@ -125,16 +125,22 @@ body {
 /* Media query for mobile view */
 @media (max-width: 550px) {
     #fakeNews {
-        height: 221px;
-        width: 333px;
+        /* height: 221px;
+        width: 333px; */
+        height: auto;
+        width: max-content;
     }
     #pictureOfOslomet {
-        height: 223px;
-        width: 333px;
+        /* height: 223px;
+        width: 333px; */
+        height: fit-content;
+        width: auto;
     }
     #auditoriumHorizontal {
-        height: 221px;
-        width: 333px;
+        /* height: 221px;
+        width: 333px; */
+        height: fit-content;
+        width: fit-content;
     }
 }
 
@@ -286,7 +292,7 @@ body {
 @media (max-width: 615px) {
     .navbar {
         display: flex;
-        width: 150vw;
+        width: 100vw;
         flex-direction: row;
         align-items: top;
         height: 50px;
