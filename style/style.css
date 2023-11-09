@@ -361,7 +361,12 @@ body {
 @media (max-width: 389px) {
     .wrapperClimbingWall {
         display: grid;
-        grid-template-columns: auto 47vw 37vw auto;
+        grid-template-columns: 10px 47vw 37vw 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 10px 47vw 37vw 10px;
         grid-auto-rows: minmax(100px, auto);
     }
     #fakeNews {
