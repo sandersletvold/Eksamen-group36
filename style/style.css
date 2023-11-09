@@ -44,7 +44,7 @@ body {
 /* Grid layout for all pages except climbingWall.html */
 .wrapper {
     display: grid;
-    grid-template-columns: 8vw 47vw 37vw 8vw;
+    grid-template-columns: auto 47vw 37vw auto;
     grid-auto-rows: minmax(100px, auto);
 }
 
