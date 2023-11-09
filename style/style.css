@@ -339,25 +339,6 @@ body {
 }
 
 /* Media query for mobile view */
-@media (orientation: portrait) and (max-width: 550px) {
-    #fakeNews {
-        height: 221px;
-        width: 333px;
-    }
-    #pictureOfOslomet {
-        height: 223px;
-        width: 333px;
-    }
-    #auditoriumHorizontal {
-        height: 221px;
-        width: 333px;
-    }
-    #climbingWallCropped {
-        height: 221px;
-        width: 333px;
-    }
-}
-
 @media (orientation: portrait) and (max-width: 400px) {
     #fakeNews {
         height: 166px;
@@ -374,6 +355,25 @@ body {
     #climbingWallCropped {
         height: 166px;
         width: 250px;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 550px) {
+    #fakeNews {
+        height: 221px;
+        width: 333px;
+    }
+    #pictureOfOslomet {
+        height: 223px;
+        width: 333px;
+    }
+    #auditoriumHorizontal {
+        height: 221px;
+        width: 333px;
+    }
+    #climbingWallCropped {
+        height: 221px;
+        width: 333px;
     }
 }
 
