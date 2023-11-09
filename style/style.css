@@ -344,9 +344,9 @@ body {
     #pictureOfOslomet,
     #auditoriumHorizontal,
     #climbingWallCropped {
-        max-width: 100%; /* Ensure images don't exceed their container */
-        height: auto; /* Maintain aspect ratio */
         width: 100%; /* Take the full width of the container */
+        max-width: 92vw; /* Ensure images don't exceed their container */
+        height: auto; /* Maintain aspect ratio */
     }
 }
 
