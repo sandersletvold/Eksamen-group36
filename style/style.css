@@ -19,18 +19,18 @@ body {
 /* Defineing sizes of pictures */
 #fakeNews {
     height: 500px;
-    width: 750px;
+    width: 752px;
 }
 #pictureOfOslomet {
     height: 500px;
-    width: 750px;
+    width: 744px;
 }
 #auditoriumHorizontal {
     height: 500px;
-    width: 750px;
+    width: 753px;
 }
 #auditoriumVertical {
-    height: 600px;
+    height: 596px;
     width: 400px;
 }
 #climbingWallPicture{
@@ -78,7 +78,7 @@ body {
 /* Media query for lectureHall.html */
 @media (max-width: 1175px) {
     #auditoriumVertical {
-        height: 400px;
+        height: 393px;
         width: 264px;
     }
     #lectureHallTextBottom {
@@ -93,6 +93,7 @@ body {
     #lectureHallPicture {
         grid-column: 2/3;
         grid-row: 2;
+        margin-left: 0px;
     }
     #lectureHallText {
         grid-column: 2/4;
@@ -104,20 +105,36 @@ body {
         margin-top: 20px;
     }
     #fakeNews {
-        height: 330px;
+        height: 307px;
         width: 462px;
     }
     #pictureOfOslomet {
-        height: 330px;
+        height: 310px;
         width: 462px;
     }
     #auditoriumHorizontal {
-        height: 330px;
+        height: 307px;
         width: 462px;
     }
     #auditoriumVertical {
-        height: 400px;
+        height: 393px;
         width: 264px;
+    }
+}
+
+/* Media query for mobile view */
+@media (max-width: 550px) {
+    #fakeNews {
+        height: 230px;
+        width: 347px;
+    }
+    #pictureOfOslomet {
+        height: 233px;
+        width: 347px;
+    }
+    #auditoriumHorizontal {
+        height: 230px;
+        width: 347px;
     }
 }
 
