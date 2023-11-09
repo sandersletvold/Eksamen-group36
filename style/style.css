@@ -128,13 +128,13 @@ body {
         /* height: 221px;
         width: 333px; */
         height: auto;
-        width: 5%;
+        width: 84%;
     }
     #pictureOfOslomet {
         /* height: 223px;
         width: 333px; */
-        height: fit-content;
-        width: 5vw;
+        height: auto;
+        width: 84vw;
     }
     #auditoriumHorizontal {
         /* height: 221px;
