@@ -362,18 +362,26 @@ body {
     #fakeNews {
         height: 149px;
         width: 225px;
+        margin-left: auto;
+        margin-right: auto;
     }
     #pictureOfOslomet {
         height: 150px;
         width: 225px;
+        margin-left: auto;
+        margin-right: auto;
     }
     #auditoriumHorizontal {
         height: 149px;
         width: 225px;
+        margin-left: auto;
+        margin-right: auto;
     }
     #climbingWallCropped {
         height: 149px;
         width: 225px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
