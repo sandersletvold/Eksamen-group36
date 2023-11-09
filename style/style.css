@@ -339,7 +339,18 @@ body {
 }
 
 /* Media query for mobile view */
-@media (orientation: portrait) and (max-width: 400px) {
+@media (orientation: portrait) and (max-width: 550) {
+    #fakeNews,
+    #pictureOfOslomet,
+    #auditoriumHorizontal,
+    #climbingWallCropped {
+        max-width: 100%; /* Ensure images don't exceed their container */
+        height: auto; /* Maintain aspect ratio */
+        width: 100%; /* Take the full width of the container */
+    }
+}
+
+/* @media (orientation: portrait) and (max-width: 400px) {
     #fakeNews {
         height: 166px;
         width: 250px;
@@ -356,9 +367,9 @@ body {
         height: 166px;
         width: 250px;
     }
-}
+} */
 
-@media (orientation: portrait) and (max-width: 550px) {
+/* @media (orientation: portrait) and (max-width: 550px) {
     #fakeNews {
         height: 221px;
         width: 333px;
@@ -375,7 +386,7 @@ body {
         height: 221px;
         width: 333px;
     }
-}
+} */
 
 /* Default navbar styling */
 .navbar a:hover { /* Styles links to turn white while hovering */
