@@ -357,23 +357,23 @@ body {
         width: 333px;
     }
 }
-
+/* Media query for mobile view for smaller viewports */
 @media (max-width: 389px) {
     #fakeNews {
-        height: 166px;
-        width: 250px;
+        height: 149px;
+        width: 225px;
     }
     #pictureOfOslomet {
-        height: 167px;
-        width: 250px;
+        height: 150px;
+        width: 225px;
     }
     #auditoriumHorizontal {
-        height: 166px;
-        width: 250px;
+        height: 149px;
+        width: 225px;
     }
     #climbingWallCropped {
-        height: 166px;
-        width: 250px;
+        height: 149px;
+        width: 225px;
     }
 }
 
