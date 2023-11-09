@@ -44,7 +44,7 @@ body {
 /* Grid layout for all pages except climbingWall.html */
 .wrapper {
     display: grid;
-    grid-template-columns: auto 47vw 37vw auto;
+    grid-template-columns: 8vw 47vw 37vw 8vw;
     grid-auto-rows: minmax(100px, auto);
 }
 
@@ -336,6 +336,16 @@ body {
         height: 307px;
         width: 462px;
     }
+    .wrapper {
+        display: grid;
+        grid-template-columns: auto 47vw 37vw auto;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    .wrapperClimbingWall {
+        display: grid;
+        grid-template-columns: auto 47vw 37vw auto;
+        grid-auto-rows: minmax(100px, auto);
+    }
 }
 
 /* Media query for mobile view */
@@ -359,16 +369,6 @@ body {
 }
 /* Media query for mobile view for smaller viewports */
 @media (max-width: 389px) {
-    .wrapperClimbingWall {
-        display: grid;
-        grid-template-columns: 10px 47vw 37vw 10px;
-        grid-auto-rows: minmax(100px, auto);
-    }
-    .wrapper {
-        display: grid;
-        grid-template-columns: 10px 47vw 37vw 10px;
-        grid-auto-rows: minmax(100px, auto);
-    }
     #fakeNews {
         height: 149px;
         width: 225px;
