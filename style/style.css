@@ -359,6 +359,16 @@ body {
 }
 /* Media query for mobile view for smaller viewports */
 @media (max-width: 389px) {
+    .wrapperClimbingWall {
+        display: grid;
+        grid-template-columns: auto 47vw 37vw auto;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: auto 47vw 37vw auto;
+        grid-auto-rows: minmax(100px, auto);
+    }
     #fakeNews {
         height: 149px;
         width: 225px;
