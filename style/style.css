@@ -294,8 +294,8 @@ body {
 /* Media query for lectureHall.html */
 @media (max-width: 1175px) {
     #auditoriumVertical {
-        height: 496px;
-        width: 333px;
+        height: 393px;
+        width: 264px;
     }
     #lectureHallTextBottom {
         grid-column: 2/4;
@@ -333,8 +333,8 @@ body {
         width: 450px;
     }
     #auditoriumVertical {
-        height: 393px;
-        width: 264px;
+        height: 496px;
+        width: 333px;
     }
     #climbingWallCropped {
         height: 298px;
