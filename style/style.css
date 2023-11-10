@@ -9,37 +9,37 @@ body {
     font-size: small;
     color: rgb(86, 86, 86);
 }
-.mainHeadings {
+.main-headings {
     font-size: 2rem;
     line-height: 35px;
 }
-.secondaryHeadings {
+.secondary-headings {
     font-size: 1.6rem;
     line-height: 35px;
 }
 
 /* Defineing sizes of pictures */
-#fakeNews {
+#fake-news {
     height: 500px;
     width: 752px;
 }
-#pictureOfOslomet {
+#picture-of-oslomet {
     height: 500px;
     width: 744px;
 }
-#auditoriumHorizontal {
+#auditorium-horizontal {
     height: 500px;
     width: 753px;
 }
-#auditoriumVertical {
+#auditorium-vertical {
     height: 596px;
     width: 400px;
 }
-#climbingWallPicture{
+#climbing-wall-picture{
     height: 1020px;
     width: 510px;
 }
-#climbingWallCropped {
+#climbing-wall-cropped {
     display: none;
 }
 
@@ -51,34 +51,34 @@ body {
 }
 
 /* Grid styles for all pages expect climbingWall.html */
-.mainBox {
+.main-box {
     grid-column: 2/4;
     grid-row: 1;
     margin-top: 50px;
 }
-.secondBox {
+.second-box {
     grid-column: 2/4;
     grid-row: 2;
 }
-#lectureHallText {
+#lecture-hall-text {
     grid-column: 2/3;
     grid-row: 2;
     margin-top: 20px;
 }
-#lectureHallPicture {
+#lecture-hall-picture {
     grid-column: 3/4;
     grid-row: 2;
     margin-top: 40px;
     margin-left: 105px;
 }
-#lectureHallTextBottom {
+#lecture-hall-text-bottom {
     grid-column: 2/3;
     grid-row: 3;
     margin-top: -325px;
 }
 
 /* Grid layout for the footer */
-.footerWrapper {
+.footer-wrapper {
     display: grid;
     grid-template-columns: 20vw auto 20vw;
     background-color: rgb(77, 77, 77);
@@ -97,7 +97,7 @@ body {
 }
 
 /* Grid layout for climbingWall.html */
-.wrapperClimbingWall {
+.wrapper-climbing-wall {
     display: grid;
     grid-template-columns: 50px auto 510px 50px;
     grid-auto-rows: minmax(100px, auto);
@@ -105,28 +105,28 @@ body {
 }
 
 /* Grid style for climbingWall.html */
-.textClimbingWall {
+.text-climbing-wall {
     grid-column: 2/3;
     grid-row: 1;
     margin-top: 50px;
     margin-right: 50px;
 }
-.pictureClimbingWall {
+.picture-climbing-wall {
     grid-column: 3/5;
     grid-row: 1;
 }
-.textUnderPicture {
+.text-under-picture {
     grid-column: 2/4;
     grid-row: 2;
 }
 
 /* Default styles for climbingWall.html */
-.climbingWallBackgroundColor {
+.climbing-wall-background-color {
     background-color: rgb(56, 56, 56);
     padding: 15px;
     color: white;
 }
-.climbingWallSecondaryHeadings {
+.climbing-wall-secondary-headings {
     color: white;
     text-decoration: underline;
     text-decoration-color: rgba(245, 245, 245, 0.23);
@@ -134,7 +134,7 @@ body {
     font-weight: bolder;
     text-align: center;
 }
-#climbingWallMainHeading {
+#climbing-wall-main-heading {
     color: white;
     text-decoration: underline;
     text-decoration-color: rgba(245, 245, 245, 0.23);
@@ -142,11 +142,11 @@ body {
     text-align: center;
     line-height: 35px;
 }
-#photographerClimbingWall {
+#photographer-climbing-wall {
     font-size: small;
     color: rgb(242, 242, 242);
 }
-#footerWrapperClimbingWall {
+#footer-wrapper-climbing-wall {
     display: grid;
     grid-template-columns: 20vw auto 20vw;
     background-color: orange;
@@ -176,10 +176,10 @@ body {
     border-style: solid;
     border-color: black;
 } 
-.menuButtonContainer { /* Hide the burger-box on wide screens */
+.menu-button-container { /* Hide the burger-box on wide screens */
     display: none;
 } 
-#burgerToggle { /* Hide the burger-image on wide screens */
+#burger-toggle { /* Hide the burger-image on wide screens */
     display: none;
 }
 .menu > li { /* Styling for menu items */
@@ -189,34 +189,34 @@ body {
 
 /* Media query for climbingWall.html */
 @media (max-width: 1150px) {
-    .wrapperClimbingWall {
+    .wrapper-climbing-wall {
         display: grid;
         grid-template-columns: 8vw 47vw 37vw 8vw;
         grid-auto-rows: minmax(100px, auto);
     }
-    .textClimbingWall {
+    .text-climbing-wall {
         grid-column: 2/4;
         grid-row: 1;
         margin-right: 0px;
     }
-    .pictureClimbingWall {
+    .picture-climbing-wall {
         grid-column: 2/4;
         grid-row: 2;
         margin-top: 0px;
     }
-    .textUnderPicture {
+    .text-under-picture {
         grid-column: 2/4;
         grid-row: 3;
     }  
-    #climbingWallCropped {
+    #climbing-wall-cropped {
         height: 500px;
         width: 752px;
         display: block;
     }
-    #climbingWallPicture {
+    #climbing-wall-picture {
         display: none;
     }
-    .textClimbingWall2 {
+    .text-climbing-wall2 {
         grid-column: 2/4;
         grid-row: 3;
     }
@@ -233,7 +233,7 @@ body {
         background-color: orange;
         padding-left: 15px; /* Adds padding from the burger to the links */
     }
-    .menuButtonContainer {
+    .menu-button-container {
         display: flex;
         height: auto;
         width: 40px;
@@ -243,9 +243,9 @@ body {
         justify-content: center;
         align-items: center;
     }
-    .menuButton,
-    .menuButton::before,
-    .menuButton::after {
+    .menu-button,
+    .menu-button::before,
+    .menu-button::after {
         display: block;
         background-image: url(../media/hamburgermeny.png); /* The icon is created ourself by Sander Sletvold */
         background-size: cover; /* "cover" stretch image to fill box */
@@ -253,7 +253,7 @@ body {
         height: 40px;
         width: 40px;
     } 
-    #burgerToggle + .menuButtonContainer {
+    #burger-toggle + .menu-button-container {
         margin: 0px;
     }
     .menu {
@@ -273,13 +273,13 @@ body {
         background-color: orange; /* Without bg-colour, text underneath the menu is not covered */
         line-height: 17px;
     }
-    #burgerToggle ~ .menu li { /* Before you click: Hidden ~ is a "general sibling selector" */
+    #burger-toggle ~ .menu li { /* Before you click: Hidden ~ is a "general sibling selector" */
         height: 0;
         margin: 0;
         padding: 0;
         border: 0;
     }
-    #burgerToggle:checked ~ .menu li { /* After you click: Display */
+    #burger-toggle:checked ~ .menu li { /* After you click: Display */
         border: 1px;
         border-top: 0px;
         border-left: 0px;
@@ -293,11 +293,11 @@ body {
 
 /* Media query for lectureHall.html */
 @media (max-width: 1175px) {
-    #auditoriumVertical {
+    #auditorium-vertical {
         height: 393px;
         width: 264px;
     }
-    #lectureHallTextBottom {
+    #lecture-hall-text-bottom {
         grid-column: 2/4;
         grid-row: 3;
         margin-top: -25px;
@@ -306,37 +306,37 @@ body {
 
 /* Media query for all pages except climbingWall.html */
 @media (max-width: 850px) {
-    #lectureHallPicture {
+    #lecture-hall-picture {
         grid-column: 2/3;
         grid-row: 2;
         margin-left: 0px;
     }
-    #lectureHallText {
+    #lecture-hall-text {
         grid-column: 2/4;
         grid-row: 3;
     }
-    #lectureHallTextBottom {
+    #lecture-hall-text-bottom {
         grid-column: 2/4;
         grid-row: 4;
         margin-top: 20px;
     }
-    #fakeNews {
+    #fake-news {
         height: 298px;
         width: 450px;
     }
-    #pictureOfOslomet {
+    #picture-of-oslomet {
         height: 301px;
         width: 450px;
     }
-    #auditoriumHorizontal {
+    #auditorium-horizontal {
         height: 298px;
         width: 450px;
     }
-    #auditoriumVertical {
+    #auditorium-vertical {
         height: 496px;
         width: 333px;
     }
-    #climbingWallCropped {
+    #climbing-wall-cropped {
         height: 298px;
         width: 450px;
     }
@@ -344,19 +344,19 @@ body {
 
 /* Media query for mobile view with viewports between 390px and 490px width */
 @media (min-width: 390px) and (max-width: 490px) {
-    #fakeNews {
+    #fake-news {
         height: 221px;
         width: 333px;
     }
-    #pictureOfOslomet {
+    #picture-of-oslomet {
         height: 223px;
         width: 333px;
     }
-    #auditoriumHorizontal {
+    #auditorium-horizontal {
         height: 221px;
         width: 333px;
     }
-    #climbingWallCropped {
+    #climbing-wall-cropped {
         height: 221px;
         width: 333px;
     }
@@ -364,23 +364,23 @@ body {
 
 /* Media query for mobile view with viewports between 375px and 389px width */
 @media (min-width: 375px) and (max-width: 389px) {
-    #fakeNews {
+    #fake-news {
         height: 149px;
         width: 225px;
     }
-    #pictureOfOslomet {
+    #picture-of-oslomet {
         height: 150px;
         width: 225px;
     }
-    #auditoriumHorizontal {
+    #auditorium-horizontal {
         height: 149px;
         width: 225px;
     }
-    #climbingWallCropped {
+    #climbing-wall-cropped {
         height: 149px;
         width: 225px;
     }
-    #auditoriumVertical {
+    #auditorium-vertical {
         height: 335px;
         width: 225px;
     }
@@ -388,23 +388,23 @@ body {
 
 /* Media query for mobile view with viewports less than 375px width */
 @media (max-width: 374px) {
-    #fakeNews {
+    #fake-news {
         height: 119px;
         width: 180px;
     }
-    #pictureOfOslomet {
+    #picture-of-oslomet {
         height: 119px;
         width: 180px;
     }
-    #auditoriumHorizontal {
+    #auditorium-horizontal {
         height: 119px;
         width: 180px;
     }
-    #climbingWallCropped {
+    #climbing-wall-cropped {
         height: 119px;
         width: 180px;
     }
-    #auditoriumVertical {
+    #auditorium-vertical {
         height: 268px;
         width: 180px;
     }
