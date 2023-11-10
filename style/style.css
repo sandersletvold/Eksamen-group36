@@ -3,6 +3,8 @@ body {
     margin: 0px;
     font-family: sans-serif;
     background-color: rgb(245, 249, 255);
+}
+p {
     line-height: 25px;
 }
 .photographer {
@@ -11,11 +13,9 @@ body {
 }
 .main-headings {
     font-size: 2rem;
-    line-height: 35px;
 }
 .secondary-headings {
     font-size: 1.6rem;
-    line-height: 35px;
 }
 
 /* Defineing sizes of pictures */
@@ -261,7 +261,7 @@ body {
         margin-top: 50px; /* Postitions pop-up menu relative to the hamburger */
         margin-left: -55px; 
         flex-direction: column; /* Stacks the menu-entries beneath each other */
-        height: 164px; /* Determines the position of the dropdown meny relative to the burger */
+        height: 167px; /* Determines the position of the dropdown meny relative to the burger */
         justify-content: center;
         align-content: initial;
     }
@@ -271,7 +271,6 @@ body {
         margin: 0;
         width: 200px; /* Width of menu. For mobile, maybe 100 % had been better?? */
         background-color: orange; /* Without bg-colour, text underneath the menu is not covered */
-        line-height: 17px;
     }
     #burger-toggle ~ .menu li { /* Before you click: Hidden ~ is a "general sibling selector" */
         height: 0;
