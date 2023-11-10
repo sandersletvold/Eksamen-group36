@@ -247,7 +247,7 @@ p {
     .menu-button::before,
     .menu-button::after {
         display: block;
-        background-image: url(../media/hamburgermeny.png); /* The icon is created ourself by Sander Sletvold */
+        background-image: url(../media/hamburger-menu.png); /* The icon is created ourself by Sander Sletvold */
         background-size: cover; /* "cover" stretch image to fill box */
         position: sticky;
         height: 40px;
