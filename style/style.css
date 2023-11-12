@@ -1,4 +1,4 @@
-/* Default styles for the entire website */
+/* Default styles for all pages except climbing-wall.html */
 body {
     margin: 0px;
     font-family: sans-serif;
@@ -18,39 +18,14 @@ p {
     font-size: 1.6rem;
 }
 
-/* Defineing sizes of pictures */
-#fake-news {
-    height: 500px;
-    width: 752px;
-}
-#picture-of-oslomet {
-    height: 500px;
-    width: 744px;
-}
-#auditorium-horizontal {
-    height: 500px;
-    width: 753px;
-}
-#auditorium-vertical {
-    height: 596px;
-    width: 400px;
-}
-#climbing-wall-picture{
-    height: 1020px;
-    width: 510px;
-}
-#climbing-wall-cropped {
-    display: none;
-}
-
-/* Grid layout for all pages except climbingWall.html */
+/* Grid layout for all pages except climbing-wall.html */
 .wrapper {
     display: grid;
     grid-template-columns: 8vw 47vw 37vw 8vw;
     grid-auto-rows: minmax(100px, auto);
 }
 
-/* Grid styles for all pages expect climbingWall.html */
+/* Grid styles for all pages expect climbing-wall.html */
 .main-box {
     grid-column: 2/4;
     grid-row: 1;
@@ -77,50 +52,7 @@ p {
     margin-top: -325px;
 }
 
-/* Grid layout for the footer */
-.footer-wrapper {
-    display: grid;
-    grid-template-columns: 20vw auto 20vw;
-    background-color: rgb(77, 77, 77);
-    margin: 0px;
-    color: white;
-}
-
-/* Grid style for the footer */
-.footer {
-    grid-column: 2/3;
-    grid-row: auto;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-weight: bold;
-}
-
-/* Grid layout for climbingWall.html */
-.wrapper-climbing-wall {
-    display: grid;
-    grid-template-columns: 50px auto 510px 50px;
-    grid-auto-rows: minmax(100px, auto);
-    background-color: rgb(42, 42, 42);
-}
-
-/* Grid style for climbingWall.html */
-.text-climbing-wall {
-    grid-column: 2/3;
-    grid-row: 1;
-    margin-top: 50px;
-    margin-right: 50px;
-}
-.picture-climbing-wall {
-    grid-column: 3/5;
-    grid-row: 1;
-}
-.text-under-picture {
-    grid-column: 2/4;
-    grid-row: 2;
-}
-
-/* Default styles for climbingWall.html */
+/* Default styles for climbing-wall.html */
 .climbing-wall-background-color {
     background-color: rgb(56, 56, 56);
     padding: 15px;
@@ -152,6 +84,89 @@ p {
     background-color: orange;
     margin: 0px;
     color: black;
+}
+
+/* Grid layout for climbing-wall.html */
+.wrapper-climbing-wall {
+    display: grid;
+    grid-template-columns: 50px auto 510px 50px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: rgb(42, 42, 42);
+}
+
+/* Grid style for climbing-wall.html */
+.text-climbing-wall {
+    grid-column: 2/3;
+    grid-row: 1;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.picture-climbing-wall {
+    grid-column: 3/5;
+    grid-row: 1;
+}
+.text-under-picture {
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+/* Defineing sizes of pictures for all pages */
+#fake-news {
+    height: 500px;
+    width: 752px;
+}
+#picture-of-oslomet {
+    height: 500px;
+    width: 744px;
+}
+#auditorium-horizontal {
+    height: 500px;
+    width: 753px;
+}
+#auditorium-vertical {
+    height: 596px;
+    width: 400px;
+}
+#climbing-wall-picture{
+    height: 1020px;
+    width: 510px;
+}
+#climbing-wall-cropped {
+    display: none;
+}
+
+/* Grid layout for the footer */
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 20vw auto 20vw;
+    background-color: rgb(77, 77, 77);
+    margin: 0px;
+    color: white;
+}
+
+/* Grid style for the footer */
+.footer {
+    grid-column: 2/3;
+    grid-row: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Default navbar styling */
+.navbar a:hover { /* Styles links to turn white while hovering */
+    color: white;
+    transition-duration: 250ms;
+}
+.navbar li a { /* Style for links */
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+.navbar li a.active { /* Style for link with the active class */
+    color: white;
 }
 
 /* This marks the start of code we have taken from Tengel's example 
@@ -407,19 +422,4 @@ p {
         height: 268px;
         width: 180px;
     }
-}
-
-/* Default navbar styling */
-.navbar a:hover { /* Styles links to turn white while hovering */
-    color: white;
-    transition-duration: 250ms;
-}
-.navbar li a { /* Style for links */
-    font-weight: bold;
-    font-size: large;
-    text-decoration: none;
-    color: black;
-}
-.navbar li a.active { /* Style for link with the active class */
-    color: white;
 }
