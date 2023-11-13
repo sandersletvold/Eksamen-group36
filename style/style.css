@@ -25,7 +25,7 @@ p {
     grid-auto-rows: minmax(100px, auto);
 }
 
-/* Grid styles for SOME PAGES Husk å endre denne kommentaren */
+/* Grid styles for all pages except climbing-wall.html and accessibility.html  */
 .main-box {
     grid-column: 2/4;
     grid-row: 1;
@@ -52,7 +52,7 @@ p {
     margin-top: -300px;
 }
 
-/*Grid styles for accessibility siden*/
+/* Grid styles for accessibility.html */
 #main-heading-accessibility {
     grid-column: 2/4;
     grid-row: 1;
@@ -405,7 +405,8 @@ p {
     #lecture-hall-text-bottom {
         grid-column: 2/4;
         grid-row: 3;
-        margin-top: -25px;
+        margin-top: 0px;
+        margin-bottom: 50px;
     }
     #lighthouse-desktop-full {
         display: none;
@@ -497,27 +498,26 @@ p {
     #lecture-hall-text-bottom {
         grid-column: 2/4;
         grid-row: 4;
-        margin-top: 20px;
     }
     #fake-news {
-        height: 298px;
-        width: 450px;
+        width: 84vw;
+        height: auto;
     }
     #picture-of-oslomet {
-        height: 301px;
-        width: 450px;
+        width: 84vw;
+        height: auto;
     }
     #auditorium-horizontal {
-        height: 298px;
-        width: 450px;
+        width: 84vw;
+        height: auto;
     }
     #auditorium-vertical {
         height: 496px;
         width: 333px;
     }
     #climbing-wall-cropped {
-        height: 298px;
-        width: 450px;
+        width: 84vw;
+        height: auto;
     }
     #lighthouse-desktop-rep-cropped {
         display: block;
@@ -563,31 +563,23 @@ p {
     }
 }
 
-/* Media query for mobile view with viewports between 390px and 490px width */
+/* Media query for mobile view (less than 431px viewwidth) */
 @media (max-width: 430px) {
     #fake-news {
         width: 84vw;
         height: auto;
-        /*height: 221px;
-        width: 333px; */
     }
     #picture-of-oslomet {
         width: 84vw;
         height: auto;
-        /*height: 223px;
-        width: 333px;*/
     }
     #auditorium-horizontal {
         width: 84vw;
         height: auto;
-        /*height: 221px;
-        width: 333px;*/
     }
     #climbing-wall-cropped {
         width: 84vw;
         height: auto;
-        /*height: 221px;
-        width: 333px;*/
     }
     .third-box-accessibility {
         grid-column: 2/4;
@@ -633,51 +625,3 @@ p {
         height: auto;
     }
 }
-
-/* Media query for mobile view with viewports between 375px and 389px width 
-@media (min-width: 375px) and (max-width: 389px) {
-    #fake-news {
-        height: 149px;
-        width: 225px;
-    }
-    #picture-of-oslomet {
-        height: 150px;
-        width: 225px;
-    }
-    #auditorium-horizontal {
-        height: 149px;
-        width: 225px;
-    }
-    #climbing-wall-cropped {
-        height: 149px;
-        width: 225px;
-    }
-    #auditorium-vertical {
-        height: 335px;
-        width: 225px;
-    }
-} */
-
-/* Media query for mobile view with viewports less than 375px width 
-@media (max-width: 374px) {
-    #fake-news {
-        height: 119px;
-        width: 180px;
-    }
-    #picture-of-oslomet {
-        height: 119px;
-        width: 180px;
-    }
-    #auditorium-horizontal {
-        height: 119px;
-        width: 180px;
-    }
-    #climbing-wall-cropped {
-        height: 119px;
-        width: 180px;
-    }
-    #auditorium-vertical {
-        height: 268px;
-        width: 180px;
-    }
-} */
