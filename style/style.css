@@ -21,11 +21,11 @@ p {
 /* Grid layout for all pages except climbing-wall.html */
 .wrapper {
     display: grid;
-    grid-template-columns: 8vw 47vw 37vw 8vw;
+    grid-template-columns: 14vw 42vw 32vw 12vw;
     grid-auto-rows: minmax(100px, auto);
 }
 
-/* Grid styles for all pages expect climbing-wall.html */
+/* Grid styles for SOME PAGES Husk å endre denne kommentaren */
 .main-box {
     grid-column: 2/4;
     grid-row: 1;
@@ -50,6 +50,31 @@ p {
     grid-column: 2/3;
     grid-row: 3;
     margin-top: -325px;
+}
+/*Grid layout for accessibility siden*/
+#main-heading-accessibility {
+    grid-column: 2/4;
+    grid-row: 1;
+    margin-top: 50px;
+}
+.main-box-accessibility {
+    grid-column: 2/3;
+    grid-row: 2;
+    margin-right: 50px;
+}
+
+.second-box-accessibility {
+    grid-column: 3/4;
+    grid-row: 2;
+}
+.third-box-accessibility {
+    grid-column: 2/3;
+    grid-row: 3;
+    margin-right: 50px;
+}
+.forth-box-accessibility {
+    grid-column: 3/4;
+    grid-row: 3;
 }
 
 /* Default styles for climbing-wall.html */
@@ -132,6 +157,35 @@ p {
     width: 510px;
 }
 #climbing-wall-cropped {
+    display: none;
+}
+/* Styling bilder for accessibility siden*/
+#lighthouse-desktop-full {
+    width: 400px;
+    height: 300px;
+}
+#lighthouse-desktop-rep {
+    display: none;
+}
+#lighthouse-mobile-full {
+    width: 400px;
+    height: 300px;
+}
+#lighthouse-mobile-rep {
+    display: none;
+}
+#wave-rep-full {
+    width: 400px;
+    height: 300px;
+}
+#wave-rep {
+    display: none;
+}
+#wave-rep-details-full {
+    width: 400px;
+    height: 300px;
+}
+#wave-rep-details {
     display: none;
 }
 
