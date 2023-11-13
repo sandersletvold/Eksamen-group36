@@ -580,14 +580,23 @@ p {
         grid-row: 6;
         margin-right: 4vw;
     }
+    .forth-box-accessibility {
+        grid-column: 2/4;
+        grid-row: 8;
+        margin-left: 0px;
+    }
     .forth-box-accessibility-pictures {
+        grid-column: 2/4;
         grid-row: 9;
         margin-bottom: 0px;
     }
-    .forth-box-accessibility {
-        grid-column: 2/4;
-        grid-row: 9;
-        margin-left: 0px;
+    #lighthouse-desktop-rep-cropped {
+        width: 84vw;
+        height: auto;
+    }
+    #lighthouse-mobile-rep-cropped {
+        width: 84vw;
+        height: auto;
     }
 }
 
