@@ -184,7 +184,7 @@ p {
     display: none;
 }
 
-/* Styling for accessibility page pictures */
+/* Defineing sizes of pictures for accessibility.html */
 #lighthouse-desktop-full {
     width: 38vw;
     height: auto;
@@ -564,27 +564,38 @@ p {
 }
 
 /* Media query for mobile view with viewports between 390px and 490px width */
-@media (min-width: 390px) and (max-width: 490px) {
+@media (max-width: 430px) {
     #fake-news {
-        height: 221px;
-        width: 333px;
+        width: 84vw;
+        height: auto;
+        /*height: 221px;
+        width: 333px; */
     }
     #picture-of-oslomet {
-        height: 223px;
-        width: 333px;
+        width: 84vw;
+        height: auto;
+        /*height: 223px;
+        width: 333px;*/
     }
     #auditorium-horizontal {
-        height: 221px;
-        width: 333px;
+        width: 84vw;
+        height: auto;
+        /*height: 221px;
+        width: 333px;*/
     }
     #climbing-wall-cropped {
-        height: 221px;
-        width: 333px;
+        width: 84vw;
+        height: auto;
+        /*height: 221px;
+        width: 333px;*/
     }
     .third-box-accessibility {
         grid-column: 2/4;
         grid-row: 6;
         margin-right: 4vw;
+    }
+    .third-box-accessibility-pictures {
+        margin-bottom: 50px;
     }
     .forth-box-accessibility {
         grid-column: 2/4;
@@ -623,7 +634,7 @@ p {
     }
 }
 
-/* Media query for mobile view with viewports between 375px and 389px width */
+/* Media query for mobile view with viewports between 375px and 389px width 
 @media (min-width: 375px) and (max-width: 389px) {
     #fake-news {
         height: 149px;
@@ -645,9 +656,9 @@ p {
         height: 335px;
         width: 225px;
     }
-}
+} */
 
-/* Media query for mobile view with viewports less than 375px width */
+/* Media query for mobile view with viewports less than 375px width 
 @media (max-width: 374px) {
     #fake-news {
         height: 119px;
@@ -669,4 +680,4 @@ p {
         height: 268px;
         width: 180px;
     }
-}
+} */
