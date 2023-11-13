@@ -547,12 +547,12 @@ p {
     }
     #wave-rep {
         display: block;
-        width: 42vw;
+        width: 38vw;
         height: auto;
     }
     #wave-rep-details {
         display: block;
-        width: 42vw;
+        width: 38vw;
         height: auto;
     }
 }
@@ -588,7 +588,8 @@ p {
     .forth-box-accessibility-pictures {
         grid-column: 2/4;
         grid-row: 9;
-        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-bottom: 50px;
     }
     #lighthouse-desktop-rep-cropped {
         width: 84vw;
