@@ -219,6 +219,12 @@ p {
 #wave-rep-details {
     display: none;
 }
+#wave-rep-cropped {
+    display: none;
+}
+#wave-rep-details-cropped {
+    display: none;
+}
 
 /* Grid layout for the footer */
 .footer-wrapper {
@@ -596,6 +602,22 @@ p {
         height: auto;
     }
     #lighthouse-mobile-rep-cropped {
+        width: 84vw;
+        height: auto;
+    }
+    #wave-rep {
+        display: none;
+    }
+    #wave-rep-details {
+        display: none;
+    }
+    #wave-rep-cropped {
+        display: block;
+        width: 84vw;
+        height: auto;
+    }
+    #wave-rep-details-cropped {
+        display: block;
         width: 84vw;
         height: auto;
     }
