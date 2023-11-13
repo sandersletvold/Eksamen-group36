@@ -130,7 +130,7 @@ p {
 #footer-wrapper-climbing-wall {
     display: grid;
     grid-template-columns: 20vw auto 20vw;
-    background-color: rgb(255, 140, 0);
+    background-color: #d95005; /* The exact complementary color of the navbar for contrast */
     margin: 0px;
     color: black;
 }
@@ -370,7 +370,7 @@ p {
         margin-top: 50px; /* Postitions pop-up menu relative to the hamburger */
         margin-left: -55px; 
         flex-direction: column; /* Stacks the menu-entries beneath each other */
-        height: 167px; /* Determines the position of the dropdown meny relative to the burger */
+        height: 164px; /* Determines the position of the dropdown meny relative to the burger */
         justify-content: center;
         align-content: initial;
     }
