@@ -183,6 +183,9 @@ p {
 #climbing-wall-cropped {
     display: none;
 }
+#auditorium-vertical-cropped {
+    display: none;
+}
 
 /* Defineing sizes of pictures for accessibility.html */
 #lighthouse-desktop-full {
@@ -231,7 +234,7 @@ p {
     display: grid;
     grid-template-columns: 20vw auto 20vw;
     background-color: #2e2f2f;
-    margin: 0px;
+    margin-top: 50px;
     color: white;
 }
 
@@ -406,7 +409,6 @@ p {
         grid-column: 2/4;
         grid-row: 3;
         margin-top: 0px;
-        margin-bottom: 50px;
     }
     #lighthouse-desktop-full {
         display: none;
@@ -561,6 +563,14 @@ p {
         width: 38vw;
         height: auto;
     }
+    #auditorium-vertical {
+        display: none;
+    }
+    #auditorium-vertical-cropped {
+        display: block;
+        width: 84vw;
+        height: auto;
+    }
 }
 
 /* Media query for mobile view (less than 431px viewwidth) */
@@ -598,7 +608,6 @@ p {
         grid-column: 2/4;
         grid-row: 9;
         margin-left: 0px;
-        margin-bottom: 50px;
     }
     #lighthouse-desktop-rep-cropped {
         width: 84vw;
