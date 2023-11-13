@@ -2,7 +2,7 @@
 body {
     margin: 0px;
     font-family: sans-serif;
-    background-color: rgb(245, 249, 255);
+    background-color: #f0f9ff;
 }
 p {
     line-height: 25px;
@@ -81,7 +81,7 @@ p {
 #footer-wrapper-climbing-wall {
     display: grid;
     grid-template-columns: 20vw auto 20vw;
-    background-color: orange;
+    background-color: rgb(255, 140, 0);
     margin: 0px;
     color: black;
 }
@@ -91,7 +91,7 @@ p {
     display: grid;
     grid-template-columns: 50px auto 510px 50px;
     grid-auto-rows: minmax(100px, auto);
-    background-color: rgb(42, 42, 42);
+    background-color: #2e2f2f;
 }
 
 /* Grid style for climbing-wall.html */
@@ -139,7 +139,7 @@ p {
 .footer-wrapper {
     display: grid;
     grid-template-columns: 20vw auto 20vw;
-    background-color: rgb(77, 77, 77);
+    background-color: #2e2f2f;
     margin: 0px;
     color: white;
 }
@@ -183,7 +183,7 @@ p {
 /* Styling for the navigation bar */
 .navbar {
     position: fixed;
-    background-color: orange;
+    background-color: #058ED9;
     height: 50px;
     width: 100vw;
     border: 0;
@@ -245,7 +245,7 @@ p {
         flex-direction: row;
         align-items: top;
         height: 50px;
-        background-color: orange;
+        background-color: #058ED9;
         padding-left: 15px; /* Adds padding from the burger to the links */
     }
     .menu-button-container {
@@ -285,7 +285,7 @@ p {
         display: flex;
         margin: 0;
         width: 200px; /* Width of menu. For mobile, maybe 100 % had been better?? */
-        background-color: orange; /* Without bg-colour, text underneath the menu is not covered */
+        background-color: #058ED9; /* Without bg-colour, text underneath the menu is not covered */
     }
     #burger-toggle ~ .menu li { /* Before you click: Hidden ~ is a "general sibling selector" */
         height: 0;
