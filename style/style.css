@@ -35,6 +35,7 @@ p {
     grid-column: 2/4;
     grid-row: 2;
 }
+/* Grid style lecture hall */
 #lecture-hall-text {
     grid-column: 2/3;
     grid-row: 2;
@@ -53,11 +54,13 @@ p {
 
 /* Grid styles for accessibility.html */
 #main-heading-accessibility {
+    /* SAMME BOX SOM MAINBOX, vurder å fjerne*/
     grid-column: 2/4;
     grid-row: 1;
     margin-top: 50px;
 }
 .main-box-accessibility {
+    /* SÅ OG SI SAMME BOKS SOM LECTURE HALL TEXT*/
     grid-column: 2/3;
     grid-row: 2;
     margin-right: 4vw;
@@ -111,6 +114,7 @@ p {
     text-decoration: underline;
     text-decoration-color: rgba(245, 245, 245, 0.23);
     font-size: larger;
+    /* VURDERE Å TA ALLE TEXT ALIGN CENTER TIL CLIMBING WALL IGJEN*/
     font-weight: bolder;
     text-align: center;
 }
@@ -229,6 +233,11 @@ p {
 }
 
 /* Grid layout for the footer */
+/* KANSKJE VURDERE Å BRUKE FOOTER ELEMENTET
+footer {
+    Putte inn felles verdier fra climbingwall og vanlig footer her
+} */
+
 .footer-wrapper {
     display: grid;
     grid-template-columns: 20vw auto 20vw;
@@ -395,6 +404,7 @@ p {
         width: 30vw;
         height: auto;
     }
+    /* ENDRES ALLE VERDIENE I DE BOKSENE UNDER SEG? BÅDE GRID COLUMN OG GRID ROW */
     .main-box-accessibility {
         grid-column: 2/4;
         grid-row: 2;
@@ -557,6 +567,7 @@ p {
 
 /* Media query for mobile view (less than 431px viewwidth) */
 @media (max-width: 430px) {
+    /* TROR FLERE AV DISSE BILDENE HAR SAMME SCALING FRA MEDIA QUERYEN OVER */
     #fake-news {
         width: 84vw;
         height: auto;
