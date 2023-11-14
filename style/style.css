@@ -130,7 +130,7 @@ p {
 #footer-wrapper-climbing-wall {
     display: grid;
     grid-template-columns: 20vw auto 20vw;
-    background-color: #d95005; /* The exact complementary color of the navbar for contrast */
+    background-color: #f0f9ff; /* The exact complementary color of the navbar for contrast */
     margin: 0px;
     color: black;
 }
@@ -173,12 +173,8 @@ p {
     width: 753px;
 }
 #auditorium-vertical {
-    width: 34vw;
-    height: auto;
-    /*
     height: 596px;
     width: 400px;
-    */
 }
 #climbing-wall-picture{
     height: 1020px;
@@ -367,16 +363,14 @@ p {
         padding: 0.5em;
     }
 }
-/* This marks the end of code taken from Tengel´s github*/
+/* This marks the nd of code taken from Tengel´s github*/
 
 /* Media query for lectureHall.html and accessibility.html */
 @media (max-width: 1100px) {
-    /*
     #auditorium-vertical {
         height: 393px;
         width: 264px;
     }
-    */
     #lecture-hall-text-bottom {
         grid-column: 2/4;
         grid-row: 3;
