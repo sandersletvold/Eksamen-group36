@@ -47,9 +47,8 @@ p {
     margin-left: 105px;
 }
 #lecture-hall-text-bottom {
-    grid-column: 2/3;
-    grid-row: 2;
-    margin-top: 400px;
+    grid-column: 2/4;
+    grid-row: 3;
 }
 
 /* Grid styles for accessibility.html */
@@ -364,11 +363,6 @@ p {
 
 /* Media query for lectureHall.html and accessibility.html */
 @media (max-width: 1125px) {
-    #lecture-hall-text-bottom {
-        grid-column: 2/4;
-        grid-row: 3;
-        margin-top: 0px;
-    }
     #lighthouse-desktop-full {
         display: none;
     }
