@@ -24,9 +24,7 @@ p {
     grid-template-columns: 8vw 42vw 42vw 8vw;
     grid-auto-rows: minmax(100px, auto);
 }
-
-/* Grid styles for all pages except climbing-wall.html and accessibility.html  */
-.main-box {
+.first-box {
     grid-column: 2/4;
     grid-row: 1;
     margin-top: 50px;
@@ -53,113 +51,95 @@ p {
 }
 
 /* Grid styles for accessibility.html */
-#main-heading-accessibility {
-    /* SAMME BOX SOM MAINBOX, vurder å fjerne*/
-    grid-column: 2/4;
-    grid-row: 1;
-    margin-top: 50px;
-}
-.main-box-accessibility {
-    /* SÅ OG SI SAMME BOKS SOM LECTURE HALL TEXT*/
+#first-box-accessibility {
     grid-column: 2/3;
     grid-row: 2;
     margin-right: 4vw;
 }
-.main-box-accessibility-pictures {
+#first-box-accessibility-pictures {
     grid-column: 2/3;
     grid-row: 3;
     margin-bottom: 50px;
 }
-.second-box-accessibility {
+#second-box-accessibility {
     grid-column: 3/4;
     grid-row: 2;
     margin-left: 4vw;
 }
-.second-box-accessibility-pictures {
+#second-box-accessibility-pictures {
     grid-column: 3/4;
     grid-row: 3;
     margin-left: 4vw;
     margin-bottom: 50px;
 }
-.third-box-accessibility {
+#third-box-accessibility {
     grid-column: 2/3;
     grid-row: 4;
     margin-right: 4vw;
 }
-.third-box-accessibility-pictures {
+#third-box-accessibility-pictures {
     grid-column: 2/3;
     grid-row: 5;
-    margin-bottom: 50px;
 }
-.forth-box-accessibility {
+#forth-box-accessibility {
     grid-column: 3/4;
     grid-row: 4;
     margin-left: 4vw;
 }
-.forth-box-accessibility-pictures {
+#forth-box-accessibility-pictures {
     grid-column: 3/4;
     grid-row: 5;
     margin-left: 4vw;
-    margin-bottom: 50px;
-}
-
-/* Default styles for climbing-wall.html */
-.climbing-wall-background-color {
-    background-color: rgb(56, 56, 56);
-    padding: 15px;
-    color: white;
-}
-.climbing-wall-secondary-headings {
-    color: white;
-    text-decoration: underline;
-    text-decoration-color: rgba(245, 245, 245, 0.23);
-    font-size: larger;
-    /* VURDERE Å TA ALLE TEXT ALIGN CENTER TIL CLIMBING WALL IGJEN*/
-    font-weight: bolder;
-    text-align: center;
-}
-#climbing-wall-main-heading {
-    color: white;
-    text-decoration: underline;
-    text-decoration-color: rgba(245, 245, 245, 0.23);
-    font-weight: 900;
-    text-align: center;
-    line-height: 35px;
-}
-#photographer-climbing-wall {
-    font-size: small;
-    color: rgb(242, 242, 242);
-}
-#footer-wrapper-climbing-wall {
-    display: grid;
-    grid-template-columns: 20vw auto 20vw;
-    background-color: #f0f9ff; /* The exact complementary color of the navbar for contrast */
-    margin: 0px;
-    color: black;
 }
 
 /* Grid layout for climbing-wall.html */
-.wrapper-climbing-wall {
+#wrapper-climbing-wall {
     display: grid;
     grid-template-columns: 50px auto 510px 50px;
     grid-auto-rows: minmax(100px, auto);
     background-color: #2e2f2f;
+    text-align: center;
 }
 
 /* Grid style for climbing-wall.html */
-.text-climbing-wall {
+#text-climbing-wall {
     grid-column: 2/3;
     grid-row: 1;
     margin-top: 50px;
     margin-right: 50px;
 }
-.picture-climbing-wall {
+#picture-climbing-wall {
     grid-column: 3/5;
     grid-row: 1;
 }
-.text-under-picture {
+#text-under-picture {
     grid-column: 2/4;
     grid-row: 2;
+    margin-bottom: 50px;
+}
+
+/* Default styles for climbing-wall.html */
+.climbing-wall-background-color-text {
+    background-color: rgb(56, 56, 56);
+    padding: 15px;
+    color: white;
+    margin-bottom: 30px;
+}
+.climbing-wall-secondary-headings {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: rgba(245, 245, 245, 0.23);
+    font-size: 1.6rem;
+}
+#climbing-wall-main-heading {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: rgba(245, 245, 245, 0.23);
+    font-size: 2rem;
+}
+#photographer-climbing-wall {
+    font-size: small;
+    color: rgb(242, 242, 242);
 }
 
 /* Defineing sizes of pictures for all pages except accessibility.html */
@@ -233,21 +213,20 @@ p {
 }
 
 /* Grid layout for the footer */
-/* KANSKJE VURDERE Å BRUKE FOOTER ELEMENTET
 footer {
-    Putte inn felles verdier fra climbingwall og vanlig footer her
-} */
-
-.footer-wrapper {
     display: grid;
     grid-template-columns: 20vw auto 20vw;
-    background-color: #2e2f2f;
-    margin-top: 50px;
-    color: white;
 }
-
-/* Grid style for the footer */
-.footer {
+#footer-wrapper-climbing-wall {
+    background-color: #f0f9ff;
+    color: black;
+}
+.footer-wrapper {
+    background-color: #2e2f2f;
+    color: white;
+    margin-top: 50px;
+}
+.footer-box {
     grid-column: 2/3;
     grid-row: auto;
     text-align: center;
@@ -315,9 +294,7 @@ footer {
     }
     .menu-button-container {
         display: flex;
-        height: auto;
         width: 40px;
-        height: 50px;
         cursor: pointer;
         flex-direction: column;
         justify-content: center;
@@ -333,24 +310,18 @@ footer {
         height: 40px;
         width: 40px;
     } 
-    #burger-toggle + .menu-button-container {
-        margin: 0px;
-    }
     .menu {
         position: sticky;
         margin-top: 50px; /* Postitions pop-up menu relative to the hamburger */
         margin-left: -55px; 
         flex-direction: column; /* Stacks the menu-entries beneath each other */
         height: 164px; /* Determines the position of the dropdown meny relative to the burger */
-        justify-content: center;
-        align-content: initial;
     }
     .menu > li {
         overflow: hidden; /* Hide menu 'li' text unless burger (input) checked */
         display: flex;
-        margin: 0;
         width: 200px; /* Width of menu. For mobile, maybe 100 % had been better?? */
-        background-color: #058ED9; /* Without bg-colour, text underneath the menu is not covered */
+        background-color: #68a5c5; /* Without bg-colour, text underneath the menu is not covered */
     }
     #burger-toggle ~ .menu li { /* Before you click: Hidden ~ is a "general sibling selector" */
         height: 0;
@@ -359,16 +330,15 @@ footer {
         border: 0;
     }
     #burger-toggle:checked ~ .menu li { /* After you click: Display */
-        border: 1px;
-        border-top: 0px;
-        border-left: 0px;
+        border-bottom: 1px;
+        border-right: 1px;
         border-style: solid;
         border-color: #333;
         height: 1em;
         padding: 0.5em;
     }
 }
-/* This marks the nd of code taken from Tengel´s github*/
+/* This marks the end of code taken from Tengel´s github*/
 
 /* Media query for lectureHall.html and accessibility.html */
 @media (max-width: 1125px) {
@@ -404,64 +374,46 @@ footer {
         width: 30vw;
         height: auto;
     }
-    /* ENDRES ALLE VERDIENE I DE BOKSENE UNDER SEG? BÅDE GRID COLUMN OG GRID ROW */
-    .main-box-accessibility {
+    #first-box-accessibility {
         grid-column: 2/4;
-        grid-row: 2;
-        margin-right: 4vw;
     }
-    .main-box-accessibility-pictures {
+    #first-box-accessibility-pictures {
         grid-column: 2/4;
-        grid-row: 3;
-        margin-bottom: 50px;
     }
-    .second-box-accessibility {
+    #second-box-accessibility {
         grid-column: 2/4;
         grid-row: 4;
         margin-left: 0px;
     }
-    .second-box-accessibility-pictures {
+    #second-box-accessibility-pictures {
         grid-column: 2/4;
         grid-row: 5;
-        margin-bottom: 50px;
         margin-left: 0px;
     }
-    .third-box-accessibility {
-        grid-column: 2/3;
+    #third-box-accessibility {
         grid-row: 6;
-        margin-right: 4vw;
     }
-    .third-box-accessibility-pictures {
-        grid-column: 2/3;
+    #third-box-accessibility-pictures {
         grid-row: 7;
-        margin-bottom: 50px;
     }
-    .forth-box-accessibility {
-        grid-column: 3/4;
+    #forth-box-accessibility {
         grid-row: 6;
-        margin-left: 4vw;
     }
-    .forth-box-accessibility-pictures {
-        grid-column: 3/4;
+    #forth-box-accessibility-pictures {
         grid-row: 7;
-        margin-left: 4vw;
-        margin-bottom: 50px;
     }
-    .wrapper-climbing-wall {
+    #wrapper-climbing-wall {
         grid-template-columns: 8vw 47vw 37vw 8vw;
     }
-    .text-climbing-wall {
+    #text-climbing-wall {
         grid-column: 2/4;
-        grid-row: 1;
         margin-right: 0px;
     }
-    .picture-climbing-wall {
+    #picture-climbing-wall {
         grid-column: 2/4;
         grid-row: 2;
-        margin-top: 0px;
     }
-    .text-under-picture {
-        grid-column: 2/4;
+    #text-under-picture {
         grid-row: 3;
     }
     #climbing-wall-cropped {
@@ -472,10 +424,6 @@ footer {
     #climbing-wall-picture {
         display: none;
     }
-    .text-climbing-wall2 {
-        grid-column: 2/4;
-        grid-row: 3;
-    }
     #lecture-hall-picture {
         grid-column: 2/3;
         grid-row: 3;
@@ -483,10 +431,8 @@ footer {
     }
     #lecture-hall-text {
         grid-column: 2/4;
-        grid-row: 2;
     }
     #lecture-hall-text-bottom {
-        grid-column: 2/4;
         grid-row: 4;
     }
     #auditorium-vertical {
@@ -499,7 +445,7 @@ footer {
     }
 }
 
-/* Media query for all pages except climbingWall.html */
+/* Media query for all pages */
 @media (max-width: 850px) {
     #fake-news {
         width: 84vw;
@@ -533,82 +479,36 @@ footer {
     #lighthouse-mobile-rep {
         display: none;
     }
-    .third-box-accessibility {
+    #third-box-accessibility {
         grid-column: 2/4;
-        grid-row: 6;
-        margin-right: 4vw;
     }
-    .third-box-accessibility-pictures {
-        margin-bottom: 0px;
-    }
-    .forth-box-accessibility-pictures {
-        margin-bottom: 0px;
-    }
-    .forth-box-accessibility {
+    #forth-box-accessibility {
         grid-column: 2/4;
         grid-row: 8;
         margin-left: 0px;
     }
     #wave-rep {
-        display: block;
         width: 38vw;
-        height: auto;
     }
     #wave-rep-details {
-        display: block;
         width: 38vw;
-        height: auto;
     }
     #auditorium-vertical-cropped {
         width: 84vw;
-        height: auto;
     }
 }
 
 /* Media query for mobile view (less than 431px viewwidth) */
 @media (max-width: 430px) {
-    /* TROR FLERE AV DISSE BILDENE HAR SAMME SCALING FRA MEDIA QUERYEN OVER */
-    #fake-news {
-        width: 84vw;
-        height: auto;
-    }
-    #picture-of-oslomet {
-        width: 84vw;
-        height: auto;
-    }
-    #auditorium-horizontal {
-        width: 84vw;
-        height: auto;
-    }
-    #climbing-wall-cropped {
-        width: 84vw;
-        height: auto;
-    }
-    .third-box-accessibility {
-        grid-column: 2/4;
-        grid-row: 6;
-        margin-right: 4vw;
-    }
-    .third-box-accessibility-pictures {
-        margin-bottom: 50px;
-    }
-    .forth-box-accessibility {
-        grid-column: 2/4;
-        grid-row: 8;
-        margin-left: 0px;
-    }
-    .forth-box-accessibility-pictures {
+    #forth-box-accessibility-pictures {
         grid-column: 2/4;
         grid-row: 9;
-        margin-left: 0px;
     }
     #lighthouse-desktop-rep-cropped {
         width: 84vw;
-        height: auto;
     }
     #lighthouse-mobile-rep-cropped {
         width: 84vw;
-        height: auto;
     }
     #wave-rep {
         display: none;
