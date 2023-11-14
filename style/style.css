@@ -48,8 +48,8 @@ p {
 }
 #lecture-hall-text-bottom {
     grid-column: 2/3;
-    grid-row: 3;
-    margin-top: -300px;
+    grid-row: 2;
+    margin-top: 400px;
 }
 
 /* Grid styles for accessibility.html */
@@ -173,8 +173,12 @@ p {
     width: 753px;
 }
 #auditorium-vertical {
+    width: 34vw;
+    height: auto;
+    /*
     height: 596px;
     width: 400px;
+    */
 }
 #climbing-wall-picture{
     height: 1020px;
@@ -367,10 +371,12 @@ p {
 
 /* Media query for lectureHall.html and accessibility.html */
 @media (max-width: 1100px) {
+    /*
     #auditorium-vertical {
         height: 393px;
         width: 264px;
     }
+    */
     #lecture-hall-text-bottom {
         grid-column: 2/4;
         grid-row: 3;
