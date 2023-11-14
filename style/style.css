@@ -263,8 +263,9 @@ p {
     color: white;
 }
 
-/* This marks the start of code we have taken from Tengel's example 
-   The code is changed multiple places to fit our website */
+/* Start of Hamburger menu example taken from Tengel´s github*/
+/* https://github.com/OsloMet-web/DATA1200code/blob/main/scaling/css/flex-box-menu.css */
+/* Lines of code: 58 - 161 */
 .menu {
     display: flex; 
     flex-direction: row; /* Wide screen: Menu items after each other on a horizontal line */
@@ -297,41 +298,6 @@ p {
 }
 
 /* Media query for climbingWall.html */
-@media (max-width: 1150px) {
-    .wrapper-climbing-wall {
-        display: grid;
-        grid-template-columns: 8vw 47vw 37vw 8vw;
-        grid-auto-rows: minmax(100px, auto);
-    }
-    .text-climbing-wall {
-        grid-column: 2/4;
-        grid-row: 1;
-        margin-right: 0px;
-    }
-    .picture-climbing-wall {
-        grid-column: 2/4;
-        grid-row: 2;
-        margin-top: 0px;
-    }
-    .text-under-picture {
-        grid-column: 2/4;
-        grid-row: 3;
-    }  
-    #climbing-wall-cropped {
-        height: 500px;
-        width: 752px;
-        display: block;
-    }
-    #climbing-wall-picture {
-        display: none;
-    }
-    .text-climbing-wall2 {
-        grid-column: 2/4;
-        grid-row: 3;
-    }
-}
-
-/* Media query for scaling of hamburger menu */
 @media (max-width: 615px) {
     .navbar {
         display: flex;
@@ -397,7 +363,7 @@ p {
         padding: 0.5em;
     }
 }
-/* This marks the end of code we have taken from Tengel's example */
+/* This marks the end of code taken from Tengel´s github*/
 
 /* Media query for lectureHall.html and accessibility.html */
 @media (max-width: 1100px) {
@@ -483,6 +449,37 @@ p {
         grid-row: 7;
         margin-left: 4vw;
         margin-bottom: 50px;
+    }
+    .wrapper-climbing-wall {
+        display: grid;
+        grid-template-columns: 8vw 47vw 37vw 8vw;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    .text-climbing-wall {
+        grid-column: 2/4;
+        grid-row: 1;
+        margin-right: 0px;
+    }
+    .picture-climbing-wall {
+        grid-column: 2/4;
+        grid-row: 2;
+        margin-top: 0px;
+    }
+    .text-under-picture {
+        grid-column: 2/4;
+        grid-row: 3;
+    }  
+    #climbing-wall-cropped {
+        height: 500px;
+        width: 752px;
+        display: block;
+    }
+    #climbing-wall-picture {
+        display: none;
+    }
+    .text-climbing-wall2 {
+        grid-column: 2/4;
+        grid-row: 3;
     }
 }
 
