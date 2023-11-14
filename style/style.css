@@ -466,23 +466,31 @@ p {
         grid-column: 2/4;
         grid-row: 3;
     }
-}
-
-/* Media query for all pages except climbingWall.html */
-@media (max-width: 850px) {
     #lecture-hall-picture {
         grid-column: 2/3;
-        grid-row: 2;
+        grid-row: 3;
         margin-left: 0px;
     }
     #lecture-hall-text {
         grid-column: 2/4;
-        grid-row: 3;
+        grid-row: 2;
     }
     #lecture-hall-text-bottom {
         grid-column: 2/4;
         grid-row: 4;
     }
+    #auditorium-vertical {
+        display: none;
+    }
+    #auditorium-vertical-cropped {
+        display: block;
+        width: 752px;
+        height: auto;
+    }
+}
+
+/* Media query for all pages except climbingWall.html */
+@media (max-width: 850px) {
     #fake-news {
         width: 84vw;
         height: auto;
@@ -494,10 +502,6 @@ p {
     #auditorium-horizontal {
         width: 84vw;
         height: auto;
-    }
-    #auditorium-vertical {
-        height: 496px;
-        width: 333px;
     }
     #climbing-wall-cropped {
         width: 84vw;
@@ -545,11 +549,7 @@ p {
         width: 38vw;
         height: auto;
     }
-    #auditorium-vertical {
-        display: none;
-    }
     #auditorium-vertical-cropped {
-        display: block;
         width: 84vw;
         height: auto;
     }
