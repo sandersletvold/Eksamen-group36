@@ -41,16 +41,26 @@
     <article class="wrapper"> <!-- Semantic element for declaring the start of our article -->
         <div class="first-box">
             <h1 class="main-headings">Accessibility</h1>
+            <p>
+                Accessibility is an important aspect to keep in mind when developing a website. It revolves around making your website 
+                “usable” for as many people as possible. To make sure our website meets the standards for accessibility, we conducted 
+                two different automated tests to get pin pointers on features to improve. Having no prior experience with automated 
+                website testing, we opted to use the programs recommended in obligatory assignment two, wave.webaim.org and lighthouse. 
+                Automated testing can be a quick and easy way to optimize your website. Therefor, we elected to run tests on every page 
+                of our website. We have chosen to present the automated tests of climbing-wall.html. This is our unique page which 
+                contains lots of elements. 
+            </p>
         </div>
         <div id="first-box-accessibility">
             <h2 class="secondary-headings">Lighthouse test for desktop</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat dapibus lectus. Integer sagittis
-                libero sed nisl commodo ullamcorper. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi modi numquam 
-                dicta dignissimos? Tempora veritatis est voluptate alias, beatae modi expedita, maxime quidem amet, exercitationem 
-                sapiente corporis sint molestias nostrum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem culpa 
-                repellat deleniti corrupti pariatur enim iste ex recusandae cum optio, minus illo debitis temporibus eligendi id accusamus, 
-                quaerat nihil ab?
+                The Lighthouse test results for desktop view of climbing-wall.html shows a perfect score in performance, 
+                accessibility and best practices. The page received 90/100 in search engine optimization. To further 
+                improve the score, a description of the page's content should be summarized in meta name=”description”.
+                <!-- https://developer.chrome.com/docs/lighthouse/seo/meta-description/?utm_source=lighthouse&utm_medium=devtools -->
+                Other potential improvements includes changing our pictures format from .png and .jpg to .WebP or .AVIF 
+                for faster downloads and less data consumption.
+                <!-- https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images/?utm_source=lighthouse&utm_medium=devtools -->
             </p>
         </div>
         <div id="first-box-accessibility-pictures">
@@ -61,12 +71,11 @@
         <div id="second-box-accessibility">
             <h2 class="secondary-headings">Lighthouse test for mobile</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat dapibus lectus. Integer sagittis
-                libero sed nisl commodo ullamcorper. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi modi numquam 
-                dicta dignissimos? Tempora veritatis est voluptate alias, beatae modi expedita, maxime quidem amet, exercitationem 
-                sapiente corporis sint molestias nostrum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem culpa 
-                repellat deleniti corrupti pariatur enim iste ex recusandae cum optio, minus illo debitis temporibus eligendi id accusamus, 
-                quaerat nihil ab?
+                The Lighthouse test results for mobile view of climbing-wall.html shares many similarities with the desktop view. 
+                It also received a perfect score in performance, accessibility and best practices. The same improvements could be 
+                implemented here to further optimize the website. Due to the viewport being smaller on mobile devices, an opportunity 
+                for improvement here regards image sizes. To enhance loading times, images could be sized down. This prevents the 
+                website having to load a big image, for CSS to then scale it down.
             </p>
         </div>
         <div id="second-box-accessibility-pictures">
@@ -77,12 +86,9 @@
         <div id="third-box-accessibility">
             <h2 class="secondary-headings">Wave test</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat dapibus lectus. Integer sagittis
-                libero sed nisl commodo ullamcorper. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi modi numquam 
-                dicta dignissimos? Tempora veritatis est voluptate alias, beatae modi expedita, maxime quidem amet, exercitationem 
-                sapiente corporis sint molestias nostrum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem culpa 
-                repellat deleniti corrupti pariatur enim iste ex recusandae cum optio, minus illo debitis temporibus eligendi id accusamus, 
-                quaerat nihil ab?
+                The Wave test results for climbing-wall.html sorts elements of the website into different categories depending on 
+                the accessibility. After testing climbing-wall.html it received 2 errors, 1 contrast error, 0 alerts, 3 features, 
+                9 structural elements and 0 ARIA. 
             </p>
         </div>
         <div id="third-box-accessibility-pictures">
@@ -93,12 +99,11 @@
         <div id="forth-box-accessibility">
             <h2 class="secondary-headings">Detailed wave test</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat dapibus lectus. Integer sagittis
-                libero sed nisl commodo ullamcorper. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi modi numquam 
-                dicta dignissimos? Tempora veritatis est voluptate alias, beatae modi expedita, maxime quidem amet, exercitationem 
-                sapiente corporis sint molestias nostrum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem culpa 
-                repellat deleniti corrupti pariatur enim iste ex recusandae cum optio, minus illo debitis temporibus eligendi id accusamus, 
-                quaerat nihil ab?
+                To elaborate on our “errors”. While an automated test can be helpful, machines can make mistakes, and a final human 
+                evaluation is always needed. Both errors regard our navigation bar. “Missing form label” suggests adding a corresponding 
+                label to input id=”burger-toggle” type=”checkbox”. Due to it being an invisible button, there is no need for it. “Empty form label” 
+                occurs due to div class=”menu-button”/div being empty. Inserting text here displays text not supposed to be visible. The contrast 
+                error occurs because the test loads the navbar links in the wrong position. 
             </p>
         </div>
         <div id="forth-box-accessibility-pictures">
