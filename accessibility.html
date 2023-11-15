@@ -9,10 +9,9 @@
 <body>
     <header> <!-- Semantic element for declaring the start of introductory content -->
         <!-- Start of code taken from Tengel´s github
-            https://github.com/OsloMet-web/DATA1200code/blob/main/scaling/flex-menu-example.html?fbclid=IwAR0arzVMV8D_5CA8hmMst6JMSLl9jy72WMZTb_YsRrcmNl-c0qnbbbe0zXk 
-                Lines of code 44 - 57 -->
+        https://github.com/OsloMet-web/DATA1200code/blob/main/scaling/flex-menu-example.html?fbclid=IwAR0arzVMV8D_5CA8hmMst6JMSLl9jy72WMZTb_YsRrcmNl-c0qnbbbe0zXk 
+        Lines of code 44 - 57 -->
         <nav class="navbar"> <!-- Semantic element for declaring this block as navigation -->
-            <!-- This marks the start of code we have taken from Tengel's example -->
             <input id="burger-toggle" type="checkbox" /> <!-- Hide/Show "Hamburger menu" -->
                 <label class="menu-button-container" for="burger-toggle"> <!-- "flex" if media-query TRUE -->
                     <div class="menu-button"></div>
@@ -44,35 +43,35 @@
             <p>
                 Accessibility is an important aspect to keep in mind when developing a website. It revolves around making your website 
                 “usable” for as many people as possible. To make sure our website meets the standards for accessibility, we conducted 
-                two different automated tests to get pin pointers on features to improve. Having no prior experience with automated 
-                website testing, we opted to use the programs recommended in obligatory assignment two, wave.webaim.org and lighthouse. 
+                two different automated tests to get feedback on features to improve. Having no prior experience with automated 
+                website testing, we opted to use the programs recommended in obligatory assignment 2, wave.webaim.org and lighthouse. 
                 Automated testing can be a quick and easy way to optimize your website. Therefor, we elected to run tests on every page 
-                of our website. We have chosen to present the automated tests of climbing-wall.html. This is our unique page which 
-                contains lots of elements. 
+                of our website. We have chosen to present the automated tests of climbing-wall.html due to it being our unique page with 
+                the most elements. 
             </p>
         </div>
         <div id="first-box-accessibility">
             <h2 class="secondary-headings">Choices made for universal design</h2>
             <p>
-                To ensure our website was optimized for accessibility. We made well thought out choices we would like to elaborate on. 
-                Trial and error were a keyword in the development. Many of the final choices went through multiple iterations before 
-                reaching satisfaction. Firstly, we would like to emphasize the work behind the scaling of the website. It uses multiple 
-                media queries to scale both text and pictures to fit any screen regardless of the devices' viewport. Visual layouts 
-                changes depending on the viewport are present to ensure a great functional and visual experience. Secondly, pictures 
-                scale by view width when suitable to cover the same proportion of any screen. All pictures used are all under 1 megabyte 
-                to reduce loading times. All pictures also contain well-describing alternative texts for screen readers. Furthermore, 
-                we opted for a simple design. Rather than focusing on a flashy website, we prioritized simplicity and functionality.
+                To ensure our website was optimized for accessibility. We made well-planned choices we would like to elaborate on. 
+                Many of the final choices went through multiple iterations before reaching satisfaction. Firstly, we would like to emphasize 
+                the scaling of the website. It uses multiple media queries to scale both text and pictures to fit any screen 
+                regardless of the devices' viewport. We included changes in the grid layouts depending on viewport to ensure a great functional 
+                and visual experience. Secondly, when suitable, pictures scale by view width to cover the same proportion of any screen. 
+                All pictures used are all under 1 megabyte to reduce loading times. All pictures also contain well-describing alternative 
+                texts for screen readers. Furthermore, we opted for a simple design. Rather than focusing on a flashy website, we prioritized 
+                simplicity and functionality.
             </p>
         </div>
         <div id="second-box-accessibility">
             <h2 class="secondary-headings">Choice of colours</h2>
             <p>
-                Our choices of colours for the background, text, navbar and footer was not randomly picked. We wanted to keep in mind 
-                the accessibility of colour-blind people. To ensure this, we ran a colour-blindness test of all our pages. 
-                <!-- https://www.toptal.com/designers/colorfilter --> 
-                We tested all pages for all types of colour-blindness. Every page had contrasts between colours which ensured great 
+                Our colour choices for the background, text, navbar and footer was choosen to ensure great visual design. 
+                We also wanted to keep in mind the accessibility of colour-blind people. To ensure this, we ran a colour-blindness test of all our pages. 
+                <!-- Link to the website we used to test our website: https://www.toptal.com/designers/colorfilter --> 
+                We tested for all types of colour-blindness, and every page had contrasts between colours. This ensured great 
                 accessibility regardless of colour-blindness. For visual purposes, we have included screenshots of how climbing-wall.html 
-                looks with total absence of colour vision and red/green colour-blindness.
+                looks with red/green colour-blindness and total absence of colour vision.
             </p>
         </div>
         <div id="second-box-accessibility-pictures">
@@ -84,15 +83,17 @@
             <figcaption>climbing-wall.html with "achromatopsia" (total absence of colour blindness).</figcaption>
         </div>
         <div id="third-box-accessibility">
-            <h2 class="secondary-headings">Lighthouse test for desktop</h2>
+            <h2 class="secondary-headings">Lighthouse accessibility test for desktop</h2>
             <p>
                 The Lighthouse test results for desktop view of climbing-wall.html shows a perfect score in performance, 
                 accessibility and best practices. The page received 90/100 in search engine optimization. To further 
                 improve the score, a description of the page's content should be summarized in meta name=”description”.
-                <!-- https://developer.chrome.com/docs/lighthouse/seo/meta-description/?utm_source=lighthouse&utm_medium=devtools -->
-                Other potential improvements includes changing our pictures format from .png and .jpg to .WebP or .AVIF 
-                for faster downloads and less data consumption.
-                <!-- https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images/?utm_source=lighthouse&utm_medium=devtools -->
+                <!-- Source for the possible improvement regarding search engine optimization:
+                https://developer.chrome.com/docs/lighthouse/seo/meta-description/?utm_source=lighthouse&utm_medium=devtools -->
+                Other potential improvements includes changing the picture formats from .png and .jpg to .WebP or .AVIF 
+                for faster downloads, and less data consumption.
+                <!-- Source for the possible improvement regarding picture formats:
+                https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images/?utm_source=lighthouse&utm_medium=devtools -->
             </p>
         </div>
         <div id="third-box-accessibility-pictures">
@@ -101,13 +102,13 @@
             <img id="lighthouse-desktop-rep-cropped" src="media/lighthouse-report-desktop-cropped.png" alt="More cropped picture for the automated test for desktop view by Lighthouse. 100/100 score on performance, accessibility, best practices and 90/100 for SEO.">
         </div>
         <div id="fourth-box-accessibility">
-            <h2 class="secondary-headings">Lighthouse test for mobile</h2>
+            <h2 class="secondary-headings">Lighthouse accessibility test for mobile</h2>
             <p>
-                The Lighthouse test results for mobile view of climbing-wall.html shares many similarities with the desktop view. 
-                It also received a perfect score in performance, accessibility and best practices. The same improvements could be 
+                The Lighthouse test results for the mobile view of climbing-wall.html shares many similarities with the desktop view. 
+                It also received a perfect score in performance, accessibility and best practices. The same improvements for desktop view could be 
                 implemented here to further optimize the website. Due to the viewport being smaller on mobile devices, an opportunity 
                 for improvement here regards image sizes. To enhance loading times, images could be sized down. This prevents the 
-                website having to load a big image, for CSS to then scale it down.
+                website having to load a bigger image, for CSS to then scale it down.
             </p>
         </div>
         <div id="fourth-box-accessibility-pictures">
@@ -116,11 +117,12 @@
             <img id="lighthouse-mobile-rep-cropped" src="media/lighthouse-report-mobile-cropped.png" alt="More cropped picture of the automated test for mobile view by Lighthouse. 100/100 score on performance, accessibility, best practices and 92/100 for SEO.">
         </div>
         <div id="fifth-box-accessibility">
-            <h2 class="secondary-headings">Wave test</h2>
+            <h2 class="secondary-headings">Wave accessibility test</h2>
             <p>
-                The Wave test results for climbing-wall.html sorts elements of the website into different categories depending on 
+                The Wave accessibility test results for climbing-wall.html sorts elements of the website into different categories depending on 
                 the accessibility. After testing climbing-wall.html it received 2 errors, 1 contrast error, 0 alerts, 3 features, 
-                9 structural elements and 0 ARIA. 
+                9 structural elements and 0 ARIA. While an automated test can be helpful, machines can make mistakes, and a final human 
+                evaluation is always needed.
             </p>
         </div>
         <div id="fifth-box-accessibility-pictures">
@@ -129,13 +131,12 @@
             <img id="wave-rep-cropped" src="media/wave-report-cropped.png" alt="More cropped picture of the automated test by Wave. 2 errors, 1 contrast error, 0 alerts, 3 features, 9 structural elements and 0 ARIA.">
         </div>
         <div id="sixth-box-accessibility">
-            <h2 class="secondary-headings">Detailed wave test</h2>
+            <h2 class="secondary-headings">Explaination of the wave accessibility test</h2>
             <p>
-                To elaborate on our “errors”. While an automated test can be helpful, machines can make mistakes, and a final human 
-                evaluation is always needed. Both errors regard our navigation bar. “Missing form label” suggests adding a corresponding 
+                To elaborate on our “errors”. Both errors regard our navigation bar. “Missing form label” suggests adding a corresponding 
                 label to input id=”burger-toggle” type=”checkbox”. Due to it being an invisible button, there is no need for it. “Empty form label” 
-                occurs due to div class=”menu-button”/div being empty. Inserting text here displays text not supposed to be visible. The contrast 
-                error occurs because the test loads the navbar links in the wrong position. 
+                occurs due to div class=”menu-button” being empty. By inserting text here, displays text not supposed to be visible. The contrast 
+                error occurs because the accessibility test loads the links for the navbar in the wrong position. 
             </p>
         </div>
         <div id="sixth-box-accessibility-pictures">

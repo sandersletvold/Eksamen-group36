@@ -7,50 +7,36 @@ body {
 p {
     line-height: 25px;
 }
-.photographer {
-    font-size: small;
-    color: rgb(86, 86, 86);
-}
 .main-headings {
     font-size: 2rem;
 }
 .secondary-headings {
     font-size: 1.6rem;
 }
+.photographer {
+    font-size: small;
+    color: rgb(86, 86, 86);
+}
 
-/* Grid layout for all pages except climbing-wall.html */
-.wrapper {
+/* Our basic grid layout used on all pages except climbing-wall.html
+index.html and topical.html only uses these <div>'s.
+accessibility.html and lecture-hall.html uses these <div>'s combined with other <div>'s */
+.wrapper { /* Used by all pages except climbing-wall */
     display: grid;
     grid-template-columns: 8vw 42vw 42vw 8vw;
     grid-auto-rows: minmax(100px, auto);
 }
-.first-box {
+.first-box { /* Used on all pages except climbing-wall.html */
     grid-column: 2/4;
     grid-row: 1;
     margin-top: 50px;
 }
-.second-box {
+.second-box { /* Only used on index.html and topical.html */
     grid-column: 2/4;
     grid-row: 2;
-}
-/* Grid style lecture hall */
-#lecture-hall-text {
-    grid-column: 2/3;
-    grid-row: 2;
-    margin-top: 20px;
-}
-#lecture-hall-picture {
-    grid-column: 3/4;
-    grid-row: 2;
-    margin-top: 40px;
-    margin-left: 105px;
-}
-#lecture-hall-text-bottom {
-    grid-column: 2/4;
-    grid-row: 3;
 }
 
-/* Grid styles for accessibility.html */
+/* Grid layout for accessibility.html */
 #first-box-accessibility {
     grid-column: 2/3;
     grid-row: 2;
@@ -112,16 +98,31 @@ p {
     margin-left: 4vw;
 }
 
+/* Grid layout for lecture-hall.html */
+#lecture-hall-text {
+    grid-column: 2/3;
+    grid-row: 2;
+    margin-top: 20px;
+}
+#lecture-hall-picture {
+    grid-column: 3/4;
+    grid-row: 2;
+    margin-top: 40px;
+    margin-left: 105px;
+}
+#lecture-hall-text-bottom {
+    grid-column: 2/4;
+    grid-row: 3;
+}
+
 /* Grid layout for climbing-wall.html */
-#wrapper-climbing-wall {
+#wrapper-climbing-wall { /* Only used on climbing-wall.html */
     display: grid;
     grid-template-columns: 50px auto 510px 50px;
     grid-auto-rows: minmax(100px, auto);
     background-color: #2e2f2f;
     text-align: center;
 }
-
-/* Grid style for climbing-wall.html */
 #text-climbing-wall {
     grid-column: 2/3;
     grid-row: 1;
@@ -278,9 +279,9 @@ footer {
     color: white;
 }
 
-/** Start of Hamburger menu example taken from Tengel´s github*/
-/* https://github.com/OsloMet-web/DATA1200code/blob/main/scaling/css/flex-box-menu.css */
-/* Lines of code: 58 - 161 */
+/* Start of Hamburger menu example taken from Tengel´s github
+https://github.com/OsloMet-web/DATA1200code/blob/main/scaling/css/flex-box-menu.css 
+Lines of code: 58 - 161 */
 .menu {
     display: flex; 
     flex-direction: row; /* Wide screen: Menu items after each other on a horizontal line */
@@ -312,7 +313,7 @@ footer {
     padding-top: 15px;
 }
 
-/* Media query for climbingWall.html */
+/* Media query for the navbar */
 @media (max-width: 615px) {
     .navbar {
         display: flex;
@@ -366,10 +367,41 @@ footer {
         padding: 0.5em;
     }
 }
-/* This marks the end of code taken from Tengel´s github*/
+/* This marks the end of code taken from Tengel´s github */
 
-/* Media query for lectureHall.html and accessibility.html */
+/* Media query for accessibility.html, lecture-hall.html and climbing-wall.html */
 @media (max-width: 1125px) {
+    /* Changes to the layout for accessibility.html */
+    #third-box-accessibility {
+        grid-column: 2/4;
+    }
+    #third-box-accessibility-pictures {
+        grid-column: 2/4;
+    }
+    #fourth-box-accessibility {
+        grid-column: 2/4;
+        grid-row: 6;
+        margin-left: 0px;
+    }
+    #fourth-box-accessibility-pictures {
+        grid-column: 2/4;
+        grid-row: 7;
+        margin-left: 0px;
+    }
+    #fifth-box-accessibility {
+        grid-row: 8;
+    }
+    #fifth-box-accessibility-pictures {
+        grid-row: 9;
+    }
+    #sixth-box-accessibility {
+        grid-row: 8;
+    }
+    #sixth-box-accessibility-pictures {
+        grid-row: 9;
+    }
+
+    /* Changes to the pictures of accessibility.html */
     #lighthouse-desktop-full {
         display: none;
     }
@@ -402,34 +434,31 @@ footer {
         width: 30vw;
         height: auto;
     }
-    #third-box-accessibility {
-        grid-column: 2/4;
-    }
-    #third-box-accessibility-pictures {
-        grid-column: 2/4;
-    }
-    #fourth-box-accessibility {
-        grid-column: 2/4;
-        grid-row: 6;
+
+    /* Changes to the layout for lecture-hall.html */
+    #lecture-hall-picture {
+        grid-column: 2/3;
+        grid-row: 3;
         margin-left: 0px;
     }
-    #fourth-box-accessibility-pictures {
+    #lecture-hall-text {
         grid-column: 2/4;
-        grid-row: 7;
-        margin-left: 0px;
     }
-    #fifth-box-accessibility {
-        grid-row: 8;
+    #lecture-hall-text-bottom {
+        grid-row: 4;
     }
-    #fifth-box-accessibility-pictures {
-        grid-row: 9;
+
+    /* Changes to the pictures of lecture-hall.html */
+    #auditorium-vertical {
+        display: none;
     }
-    #sixth-box-accessibility {
-        grid-row: 8;
+    #auditorium-vertical-cropped {
+        display: block;
+        width: 752px;
+        height: auto;
     }
-    #sixth-box-accessibility-pictures {
-        grid-row: 9;
-    }
+
+    /* Changes to the layout for climbing-wall.html */
     #wrapper-climbing-wall {
         grid-template-columns: 8vw 47vw 37vw 8vw;
     }
@@ -444,6 +473,8 @@ footer {
     #text-under-picture {
         grid-row: 3;
     }
+
+    /* Changes to the pictures of climbing-wall.html */
     #climbing-wall-cropped {
         height: 500px;
         width: 752px;
@@ -452,80 +483,17 @@ footer {
     #climbing-wall-picture {
         display: none;
     }
-    #lecture-hall-picture {
-        grid-column: 2/3;
-        grid-row: 3;
-        margin-left: 0px;
-    }
-    #lecture-hall-text {
-        grid-column: 2/4;
-    }
-    #lecture-hall-text-bottom {
-        grid-row: 4;
-    }
-    #auditorium-vertical {
-        display: none;
-    }
-    #auditorium-vertical-cropped {
-        display: block;
-        width: 752px;
-        height: auto;
-    }
 }
 
 /* Media query for all pages */
 @media (max-width: 850px) {
-    #fake-news {
-        width: 84vw;
-        height: auto;
-    }
+    /* Changes to the pictures of index.html */
     #picture-of-oslomet {
         width: 84vw;
         height: auto;
     }
-    #auditorium-horizontal {
-        width: 84vw;
-        height: auto;
-    }
-    #climbing-wall-cropped {
-        width: 84vw;
-        height: auto;
-    }
-    #lighthouse-desktop-rep-cropped {
-        display: block;
-        width: 63vw;
-        height: auto;
-    }
-    #lighthouse-mobile-rep-cropped {
-        display: block;
-        width: 63vw;
-        height: auto;
-    }
-    #lighthouse-desktop-rep {
-        display: none;
-    }
-    #lighthouse-mobile-rep {
-        display: none;
-    }
-    #fifth-box-accessibility {
-        grid-column: 2/4;
-    }
-    #wave-rep {
-        width: 38vw;
-    }
-    #wave-rep-details {
-        width: 38vw;
-    }
-    #color-blindness-test-protanopia {
-        width: 63vw;
-        height: auto;
-        margin-left: 0px;
-    }
-    #color-blindness-test-achromatopsia {
-        width: 63vw;
-        height: auto;
-        margin-left: 0px;
-    }
+
+    /* Changes to the layout for accessibility.html */
     #first-box-accessibility {
         grid-column: 2/4;
     }
@@ -558,33 +526,89 @@ footer {
     }
     #fifth-box-accessibility {
         grid-row: 10;
+        grid-column: 2/4;
     }
     #fifth-box-accessibility-pictures {
         grid-row: 11;
-    }
-    #sixth-box-accessibility {
-        grid-row: 10;
-    }
-    #sixth-box-accessibility-pictures {
-        grid-row: 11;
-    }
-    #auditorium-vertical-cropped {
-        width: 84vw;
     }
     #sixth-box-accessibility {
         grid-column: 2/4;
         grid-row: 12;
         margin-left: 0px;
     }
+    #sixth-box-accessibility-pictures {
+        grid-row: 11;
+    }
+
+    /* Changes to the pictures of accessibility.html */
+    #lighthouse-desktop-rep-cropped {
+        display: block;
+        width: 63vw;
+        height: auto;
+    }
+    #lighthouse-mobile-rep-cropped {
+        display: block;
+        width: 63vw;
+        height: auto;
+    }
+    #lighthouse-desktop-rep {
+        display: none;
+    }
+    #lighthouse-mobile-rep {
+        display: none;
+    }
+    #wave-rep {
+        width: 38vw;
+    }
+    #wave-rep-details {
+        width: 38vw;
+    }
+    #color-blindness-test-protanopia {
+        width: 63vw;
+        height: auto;
+        margin-left: 0px;
+    }
+    #color-blindness-test-achromatopsia {
+        width: 63vw;
+        height: auto;
+        margin-left: 0px;
+    }
+
+    /* Changes to the pictures of topical.html */
+    #fake-news {
+        width: 84vw;
+        height: auto;
+    }
+
+    /* Changes to the pictures of lecture-hall.html */
+    #auditorium-horizontal {
+        width: 84vw;
+        height: auto;
+    }
+    #auditorium-vertical-cropped {
+        width: 84vw;
+    }
+
+    /* Changes to the pictures of climbing-wall.html */
+    #climbing-wall-cropped {
+        width: 84vw;
+        height: auto;
+    }
 }
 
-/* Media query for mobile view (less than 431px viewwidth) */
+/* Media query for mobile view of accessibility.html
+The rest of the pages scales well for mobile view without this media query 
+The media query is set to activeate for screen sizes with less than 431px viewport width 
+With a maximum of 430px viewport width we play it safe to scale for all phones */
 @media (max-width: 430px) {
+    /* Changes to the layout for accessibility.html */
     #sixth-box-accessibility-pictures {
         grid-column: 2/4;
         grid-row: 13;
         margin-left: 0px;
     }
+
+    /* Changes to the pictures of accessibility.html */
     #lighthouse-desktop-rep-cropped {
         width: 84vw;
     }
