@@ -23,10 +23,10 @@ index.html and topical.html only uses these <div>'s.
 accessibility.html and lecture-hall.html uses first-box combined with unique <div>'s for their page*/
 .wrapper { /* Used by all pages except climbing-wall */
     display: grid;
-    grid-template-columns: 8vw 42vw 42vw 8vw;
+    grid-template-columns: 8vw auto auto 8vw;
     grid-auto-rows: minmax(100px, auto);
 }
-.first-box { /* Used on all pages except climbing-wall.html */
+.first-box { /* Used on all pages except climbing-wall.html, margin top to make the site begin under the navbar with position fixed*/
     grid-column: 2/4;
     grid-row: 1;
     margin-top: 50px;
@@ -37,65 +37,66 @@ accessibility.html and lecture-hall.html uses first-box combined with unique <di
 }
 
 /* Grid layout for accessibility.html */
-#accessibility-text-universal-design { /* Box for text with 4vw margin on the right */
+.wrapper-accessibility { /* Used by all pages except climbing-wall */
+    display: grid;
+    grid-template-columns: 8vw 38vw 8vw 38vw 8vw;
+    grid-auto-rows: minmax(100px, auto);
+}
+#accessibility-text { /* Used on all pages except climbing-wall.html, margin top to make the site begin under the navbar with position fixed*/
+    grid-column: 2/5;
+    grid-row: 1;
+    margin-top: 50px;
+}
+#accessibility-text-universal-design { /* Box for text */
     grid-column: 2/3;
     grid-row: 2;
-    margin-right: 4vw;
 }
-#accessibility-text-colors {
-    grid-column: 3/4;
+#accessibility-text-colors { /* Box for text */
+    grid-column: 4/5;
     grid-row: 2;
-    margin-left: 4vw;
 }
-#accessibility-picture-colour { /* Box for pictures with a margin for the top */
+#accessibility-picture-colour { /* Box for pictures with a margin on the bottom, to create some space to the next row */
     grid-column: 2/3;
     grid-row: 3;
     margin-bottom: 50px;
 }
-#accessibility-picture-no-colour { /* Box for  */
-    grid-column: 3/4;
+#accessibility-picture-no-colour { /* Box for pictures */
+    grid-column: 4/5;
     grid-row: 3;
-    margin-left: 4vw;
 }
-#accessibility-text-lighthouse-desktop {
+#accessibility-text-lighthouse-desktop { /* Box for text */
     grid-column: 2/3;
     grid-row: 4;
-    margin-right: 4vw;
 }
-#accessibility-pictures-lighthouse-desktop {
+#accessibility-pictures-lighthouse-desktop { /* Box for pictures with margin bottom, to create some space to the next row */
     grid-column: 2/3;
     grid-row: 5;
     margin-bottom: 50px;
 }
-#accessibility-text-lighthouse-mobile {
-    grid-column: 3/4;
+#accessibility-text-lighthouse-mobile { /* Box for text */
+    grid-column: 4/5;
     grid-row: 4;
-    margin-left: 4vw;
 }
-#accessibility-pictures-lighthouse-mobile {
-    grid-column: 3/4;
+#accessibility-pictures-lighthouse-mobile { /* Box for pictures with margin left and bottom, to create some space to the next row*/
+    grid-column: 4/5;
     grid-row: 5;
-    margin-left: 4vw;
     margin-bottom: 50px;
 }
-#accessibility-text-wave {
+#accessibility-text-wave { /* Box for text */
     grid-column: 2/3;
     grid-row: 6;
-    margin-right: 4vw;
 }
-#accessibility-pictures-wave-desktop {
+#accessibility-pictures-wave-desktop { /* Box for pictures */
     grid-column: 2/3;
     grid-row: 7;
 }
-#accessibility-text-explination-wave {
-    grid-column: 3/4;
+#accessibility-text-explination-wave { /* Box for text */
+    grid-column: 4/5;
     grid-row: 6;
-    margin-left: 4vw;
 }
-#accessibility-pictures-wave-mobile {
-    grid-column: 3/4;
+#accessibility-pictures-wave-mobile { /* Box for text */
+    grid-column: 4/5;
     grid-row: 7;
-    margin-left: 4vw;
 }
 
 /* Grid layout for lecture-hall.html */
@@ -373,18 +374,18 @@ Lines of code: 58 - 161 */
 @media (max-width: 1125px) {
     /* Changes to the layout for accessibility.html */
     #accessibility-text-lighthouse-desktop {
-        grid-column: 2/4;
+        grid-column: 2/5;
     }
     #accessibility-pictures-lighthouse-desktop {
-        grid-column: 2/4;
+        grid-column: 2/5;
     }
     #accessibility-text-lighthouse-mobile  {
-        grid-column: 2/4;
+        grid-column: 2/5;
         grid-row: 6;
         margin-left: 0px;
     }
     #accessibility-pictures-lighthouse-mobile {
-        grid-column: 2/4;
+        grid-column: 2/5;
         grid-row: 7;
         margin-left: 0px;
     }
@@ -495,11 +496,11 @@ Lines of code: 58 - 161 */
 
     /* Changes to the layout for accessibility.html */
     #accessibility-text-universal-design {
-        grid-column: 2/4;
+        grid-column: 2/5;
     }
     #accessibility-text-colors {
         grid-row: 3;
-        grid-column: 2/4;
+        grid-column: 2/5;
         margin-left: 0px;
     }
     #accessibility-picture-colour {
@@ -508,7 +509,7 @@ Lines of code: 58 - 161 */
     }
     #accessibility-picture-no-colour {
         grid-row: 5;
-        grid-column: 2/4;
+        grid-column: 2/5;
         margin-left: 0px;
         margin-bottom: 50px;
     }
@@ -526,13 +527,13 @@ Lines of code: 58 - 161 */
     }
     #accessibility-text-wave {
         grid-row: 10;
-        grid-column: 2/4;
+        grid-column: 2/5;
     }
     #accessibility-pictures-wave-desktop {
         grid-row: 11;
     }
     #accessibility-text-explination-wave {
-        grid-column: 2/4;
+        grid-column: 2/5;
         grid-row: 12;
         margin-left: 0px;
     }
@@ -603,7 +604,7 @@ With a maximum of 430px viewport width we play it safe to scale for all phones *
 @media (max-width: 430px) {
     /* Changes to the layout for accessibility.html */
     #accessibility-pictures-wave-mobile {
-        grid-column: 2/4;
+        grid-column: 2/5;
         grid-row: 13;
         margin-left: 0px;
     }
