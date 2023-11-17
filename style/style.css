@@ -134,110 +134,110 @@ lecture-hall.html uses first-box combined with unique <div>'s for the page */
     grid-column: 3/5;
     grid-row: 1;
 }
-#climbing-wall-text-more-information {
+#climbing-wall-text-more-information { /* Defines the grid position for text in the "More information about climbing" paragraph. Martin at the bottom, to create space from the footer. */
     grid-column: 2/4;
     grid-row: 2;
     margin-bottom: 50px;
 }
 
 /* Default styles for climbing-wall.html */
-.climbing-wall-background-color-text {
+.climbing-wall-background-color-text { /* Styling for the paragraphs in climbing-wall.html. Background color for the box, padding to create space between the text and the box, margin bottom to create space for the next paragraphs. */
     background-color: rgb(56, 56, 56);
     padding: 15px;
     color: white;
     margin-bottom: 30px;
 }
-.climbing-wall-secondary-headings {
+.climbing-wall-secondary-headings { /* Styling for the h2 headings. Same style as the regular secondary headings, but with different color and underlined. */
     color: white;
     text-decoration: underline;
     text-decoration-color: rgba(245, 245, 245, 0.23);
     font-size: 1.6rem;
 }
-#climbing-wall-main-heading {
+#climbing-wall-main-heading { /* Styling for the h1 headings. Same style as the regular main headings, but with different color and underlined. */
     color: white;
     text-decoration: underline;
     text-decoration-color: rgba(245, 245, 245, 0.23);
     font-size: 2rem;
 }
-#photographer-climbing-wall {
+#photographer-climbing-wall { /* Same styling for paragraphs used for the photographers name, with a different color */
     font-size: small;
     color: rgb(242, 242, 242);
 }
 
 /* Defineing sizes of pictures for all pages except accessibility.html */
-#fake-news {
+#fake-news { /* Styling to initialize the picture size of the topical.html picture. Image is cropped to 3:2 format for consistency with other pages. Auto is used to keep the proportions correct. */
     height: 500px;
-    width: 752px;
+    width: auto;
 }
-#picture-of-oslomet {
+#picture-of-oslomet { /* Styling to initialize the picture size of the index.html picture. Image is cropped to 3:2 format for consistency with other pages. Auto is used to keep the proportions correct. */
     height: 500px;
-    width: 744px;
+    width: auto;
 }
-#auditorium-horizontal {
+#auditorium-horizontal { /* Styling to initialize the picture size of the main lecture-hall.html picture. Image is cropped to 3:2 format for consistency with other pages. Auto is used to keep the proportions correct. */
     height: 500px;
-    width: 753px;
+    width: auto;
 }
-#auditorium-vertical {
-    height: 596px;
+#auditorium-vertical { /* Styling to initialize the picture size of the vertical lecture-hall.html picture. Auto is used to keep the proportions correct. */
+    height: auto;
     width: 400px;
 }
-#climbing-wall-picture-tall{
-    height: 1020px;
+#climbing-wall-picture-tall { /* Styling to initialize the picture size of the climbing-wall.html picture. Auto is used to keep the proportions correct. */
+    height: auto;
     width: 510px;
 }
-#climbing-wall-picture-cropped {
+#climbing-wall-picture-cropped { /* Picture should not be displayed until the "max-width: 1125px" media query activates */
     display: none;
 }
-#auditorium-vertical-cropped {
+#auditorium-vertical-cropped { /* Picture should not be displayed until the "max-width: 1125px" media query activates */
     display: none;
 }
 
 /* Defineing sizes of pictures for accessibility.html */
-#lighthouse-desktop-full {
+#lighthouse-desktop-full { /* Styling to initialize the picture size of the "Fullscreen Lighthouse desktop" picture. 38vw is used to fill the entire grid and for flex scaling. Auto is used to keep the proportions correct. */
     width: 38vw;
     height: auto;
 }
-#lighthouse-desktop-rep {
+#lighthouse-desktop-rep { /* Picture should not be displayed until the "max-width: 1125px" media query activates */
     display: none;
 }
-#lighthouse-desktop-rep-cropped {
+#lighthouse-desktop-rep-cropped { /* Picture should not be displayed until the "max-width: 850px" media query activates */
     display: none;
 }
-#lighthouse-mobile-full {
+#lighthouse-mobile-full { /* Styling to initialize the picture size of the "Fullscreen Lighthouse mobile" picture. 38vw is used to fill the entire grid and for flex scaling. Auto is used to keep the proportions correct. */
     width: 38vw;
     height: auto;
 }
-#lighthouse-mobile-rep {
+#lighthouse-mobile-rep { /* Picture should not be displayed until the "max-width: 1125px" media query activates */
     display: none;
 }
-#lighthouse-mobile-rep-cropped {
+#lighthouse-mobile-rep-cropped { /* Picture should not be displayed until the "max-width: 850px" media query activates */
     display: none;
 }
-#wave-rep-full {
+#wave-rep-full { /* Styling to initialize the picture size of the "Fullscreen wave test" picture. 38vw is used to fill the entire grid and for flex scaling. Auto is used to keep the proportions correct. */
     width: 38vw;
     height: auto;
 }
-#wave-rep {
+#wave-rep { /* Picture should not be displayed until the "max-width: 1125px" media query activates */
     display: none;
 }
-#wave-rep-details-full {
+#wave-rep-details-full { /* Styling to initialize the picture size of the "Fullscreen detailed wave test" picture. 38vw is used to fill the entire grid and for flex scaling. Auto is used to keep the proportions correct. */
     width: 38vw;
     height: auto;
 }
-#wave-rep-details {
+#wave-rep-details { /* Picture should not be displayed until the "max-width: 1125px" media query activates */
     display: none;
 }
-#wave-rep-cropped {
+#wave-rep-cropped { /* Picture should not be displayed until the "max-width: 430px" media query activates */
     display: none;
 }
-#wave-rep-details-cropped {
+#wave-rep-details-cropped { /* Picture should not be displayed until the "max-width: 430px" media query activates */
     display: none;
 }
-#color-blindness-test-protanopia {
+#color-blindness-test-protanopia { /* Styling to initialize the picture size of the "Red/green color blindness" picture. 38vw is used to fill the entire grid and for flex scaling. Auto is used to keep the proportions correct. */
     width: 38vw;
     height: auto;
 }
-#color-blindness-test-achromatopsia {
+#color-blindness-test-achromatopsia { /* Styling to initialize the picture size of the "Total absence of color" picture. 38vw is used to fill the entire grid and for flex scaling. Auto is used to keep the proportions correct. */
     width: 38vw;
     height: auto;
 }
