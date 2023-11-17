@@ -4,29 +4,30 @@ body { /* Sets styles for the whole page */
     font-family: sans-serif;
     background-color: #f0f9ff;
 }
-p { /* Sets styles for all paragraphs */
+p { /* Sets line spacing for all paragraphs */
     line-height: 25px;
 }
-.main-headings { /* Styling to set the font-size big */
+.main-headings { /* Styling to set the font-size big for the h1 headings */
     font-size: 2rem;
 }
-.secondary-headings { /* Styling to set the font-size a bit smaller */
+.secondary-headings { /* Styling to set the font-size a bit smaller for the h2 headings */
     font-size: 1.6rem;
 }
-.photographer { /* Styling for text */
+.photographer { /* Styling for paragraphs used for the photographers name */
     font-size: small;
     color: rgb(86, 86, 86);
 }
 
-/* Our basic grid layout used on all pages except climbing-wall.html
+/* Our basic grid layout used on all pages except accessibility.html and climbing-wall.html
 index.html and topical.html only uses these <div>'s.
-accessibility.html and lecture-hall.html uses first-box combined with unique <div>'s for their page*/
-.wrapper { /* Used by all pages except climbing-wall */
+lecture-hall.html uses first-box combined with unique <div>'s for the page */
+
+.wrapper { /* Used by all pages except accessibility.html and climbing-wall */
     display: grid;
-    grid-template-columns: 8vw auto auto 8vw;
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: 8vw auto auto 8vw; /* Grid layout for the default wrapper. 8vw are used as margins on both sides. "Vw" are used to scale the margins proportionally depending on the screen width */
+    grid-auto-rows: minmax(100px, auto); /* Makes the height for each grid row at least 100px */
 }
-.first-box { /* Used on all pages except climbing-wall.html, margin top to make the site begin under the navbar with position fixed*/
+.first-box { /* Used on all pages except accessibility.html and climbing-wall.html. Margin top to make the site begin under the navbar with position fixed */
     grid-column: 2/4;
     grid-row: 1;
     margin-top: 50px;
@@ -39,98 +40,97 @@ accessibility.html and lecture-hall.html uses first-box combined with unique <di
 /* Grid layout for accessibility.html */
 .wrapper-accessibility { /* Used by all pages except climbing-wall */
     display: grid;
-    grid-template-columns: 8vw 38vw 8vw 38vw 8vw;
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: 8vw 38vw 8vw 38vw 8vw; /* accessibility.html uses its own grid to use the second 8vw for margins at the middle of the page */
+    grid-auto-rows: minmax(100px, auto); /* Makes the height for each grid row at least 100px */
 }
-#accessibility-text { /* Used on all pages except climbing-wall.html, margin top to make the site begin under the navbar with position fixed*/
+#accessibility-text { /* Defines the grid position for text in the first paragraph. Margin at the bottom, to create some space to the next row */
     grid-column: 2/5;
     grid-row: 1;
     margin-top: 50px;
 }
-#accessibility-text-universal-design { /* Box for text */
+#accessibility-text-universal-design { /* Defines the grid position for text in the "Choices made for universal design" paragraph */
     grid-column: 2/3;
     grid-row: 2;
 }
-#accessibility-text-colors { /* Box for text */
+#accessibility-text-colors { /* Defines the grid position for text in the "Choice of colours" paragraph */
     grid-column: 4/5;
     grid-row: 2;
 }
-#accessibility-picture-colour { /* Box for pictures with a margin on the bottom, to create some space to the next row */
+#accessibility-picture-colour { /* Defines the grid position for the "red/green color blindness" picture. Margin at the bottom, to create some space to the next row */
     grid-column: 2/3;
     grid-row: 3;
     margin-bottom: 50px;
 }
-#accessibility-picture-no-colour { /* Box for pictures */
+#accessibility-picture-no-colour { /* Defines the grid position for the "total color absence" picture. Margin at the bottom is not needed due to the other picture. */
     grid-column: 4/5;
     grid-row: 3;
 }
-#accessibility-text-lighthouse-desktop { /* Box for text */
+#accessibility-text-lighthouse-desktop { /* Defines the grid position for text in the "Lighthouse accessibility test for desktop" paragraph */
     grid-column: 2/3;
     grid-row: 4;
 }
-#accessibility-pictures-lighthouse-desktop { /* Box for pictures with margin bottom, to create some space to the next row */
+#accessibility-pictures-lighthouse-desktop { /* Defines the grid position for the "Lighthouse desktop" picture. Margin at the bottom, to create some space to the next row */
     grid-column: 2/3;
     grid-row: 5;
     margin-bottom: 50px;
 }
-#accessibility-text-lighthouse-mobile { /* Box for text */
+#accessibility-text-lighthouse-mobile { /* Defines the grid position for text in the "Lighthouse accessibility test for mobile" paragraph */
     grid-column: 4/5;
     grid-row: 4;
 }
-#accessibility-pictures-lighthouse-mobile { /* Box for pictures with margin left and bottom, to create some space to the next row*/
+#accessibility-pictures-lighthouse-mobile { /* Defines the grid position for the "Lighthouse mobile" picture. Margin at the bottom, to create some space to the next row */
     grid-column: 4/5;
     grid-row: 5;
     margin-bottom: 50px;
 }
-#accessibility-text-wave { /* Box for text */
+#accessibility-text-wave { /* Defines the grid position for text in the "Wave accessibility test" paragraph */
     grid-column: 2/3;
     grid-row: 6;
 }
-#accessibility-pictures-wave-desktop { /* Box for pictures */
+#accessibility-pictures-wave-desktop { /* Defines the grid position for the "Wave accessibility test" picture */
     grid-column: 2/3;
     grid-row: 7;
 }
-#accessibility-text-explination-wave { /* Box for text */
+#accessibility-text-explination-wave { /* Defines the grid position for text in the "Explaination of the wave accessibility test" paragraph */
     grid-column: 4/5;
     grid-row: 6;
 }
-#accessibility-pictures-wave-mobile { /* Box for text */
+#accessibility-pictures-wave-mobile { /* Defines the grid position for the "Detailed wave accessibility test" picture */
     grid-column: 4/5;
     grid-row: 7;
 }
 
 /* Grid layout for lecture-hall.html */
-#lecture-hall-text-1200 {
+#lecture-hall-text-1200 { /* Defines the grid position for text in the "DATA1200" paragraph. Margin at the top, to create space from the first-box paragraph. */
     grid-column: 2/3;
     grid-row: 2;
     margin-top: 20px;
 }
-#lecture-hall-picture {
+#lecture-hall-picture { /* Defines the grid position for the vertical picture. Margin at the top and left, to create space from the top and left paragraph. */
     grid-column: 3/4;
     grid-row: 2;
     margin-top: 40px;
     margin-left: 105px;
 }
-#lecture-hall-text-other-subjects {
+#lecture-hall-text-other-subjects { /* Defines the grid position for text in the "Other subjects" paragraph */
     grid-column: 2/4;
     grid-row: 3;
 }
 
 /* Grid layout for climbing-wall.html */
-#wrapper-climbing-wall { /* Only used on climbing-wall.html */
+#wrapper-climbing-wall { /* Wrapper only used on climbing-wall.html to make it unique. Dark background color and all text with center allignment. */
     display: grid;
-    grid-template-columns: 50px auto 510px 50px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: 50px auto 510px 50px; /* 50px are used as margins on both sides. 510px is used for a set size for the picture grid. */
+    grid-auto-rows: minmax(100px, auto); /* Makes the height for each grid row at least 100px */
     background-color: #2e2f2f;
     text-align: center;
 }
-#climbing-wall-text-new-heights {
+#climbing-wall-text-new-heights { /* Defines the grid position for text in the "Indoor Climbing Walls: Scaling New Heights in Adventure" paragraph. Martin at the top, to create space from the navbar. */
     grid-column: 2/3;
     grid-row: 1;
     margin-top: 50px;
-    margin-right: 50px;
 }
-#climbing-wall-pictures {
+#climbing-wall-pictures { /* Defines the grid position for the big vertical picture */
     grid-column: 3/5;
     grid-row: 1;
 }
