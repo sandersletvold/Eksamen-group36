@@ -17,10 +17,10 @@ p { /* Sets line spacing for all paragraphs */
     font-size: small;
     color: rgb(86, 86, 86);
 }
-figure {
+figure { /* Figure is a semantic element with a margin by default, so we remove the margin */
     margin: 0;
 }
-figcaption {
+figcaption { /* Figcaption is a semantic element, used to put a text under the picture visible for the reader */
     line-height: 25px;
     padding-top: 15px;
 }
