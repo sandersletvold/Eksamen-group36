@@ -243,20 +243,20 @@ lecture-hall.html uses first-box combined with unique <div>'s for the page */
 }
 
 /* Grid layout for the footer */
-footer {
+footer { /* Semantic element, we grouped the code that is used in all footers, and used classes to differentiate them... This defines the grid for the footer */
     display: grid;
     grid-template-columns: 20vw auto 20vw;
 }
-#footer-wrapper-climbing-wall {
-    background-color: #f0f9ff;
-    color: black;
+#footer-wrapper-climbing-wall { /* Styling for the footer used in climbing wall */
+    background-color: #f0f9ff; /* Makes background white */
+    color: black; /* Sets color of the text to black */
 }
-.footer-wrapper {
-    background-color: #2e2f2f;
-    color: white;
+.footer-wrapper { /* Styling for the footer for the rest of the sites */
+    background-color: #2e2f2f; /* Makes background gray */
+    color: white; /* Sets color of the text to white */
     margin-top: 50px;
 }
-.footer-box {
+.footer-box { /* Defines the grid for text in the middle of footer, used in all footers */
     grid-column: 2/3;
     grid-row: auto;
     text-align: center;
@@ -266,11 +266,11 @@ footer {
 }
 
 /* Default navbar styling */
-.navbar a:hover { /* Styles links to turn white while hovering */
+.navbar a:hover { /* Styles links in the navbar to turn white while hovering */
     color: white;
     transition-duration: 250ms;
 }
-.navbar li a { /* Style for links */
+.navbar li a { /* Style for links in navbar */
     font-weight: bold;
     font-size: large;
     text-decoration: none;
@@ -283,7 +283,7 @@ footer {
 /* Start of Hamburger menu example taken from Tengel´s github
 https://github.com/OsloMet-web/DATA1200code/blob/main/scaling/css/flex-box-menu.css 
 Lines of code: 58 - 161 */
-.menu {
+.menu { /* Unordered list in the navbar, used to make the elements appear in a row */
     display: flex; 
     flex-direction: row; /* Wide screen: Menu items after each other on a horizontal line */
     justify-content: flex-start;
@@ -293,13 +293,13 @@ Lines of code: 58 - 161 */
 }
 
 /* Styling for the navigation bar */
-.navbar {
+.navbar { /* Class used to style the semantic element nav, used to set the position to the top of the page and add some styling for the whole navbar*/
     position: fixed;
-    background-color: #058ED9;
-    height: 50px;
+    background-color: #058ED9; /* Sets the color of the navbar, not including the dropdown menu */
+    height: 50px; /* Sets height of the navbar */
     width: 100vw;
     border: 0;
-    border-bottom: 1px;
+    border-bottom: 1px; /* Adds a small line under the navbar */
     border-style: solid;
     border-color: black;
 } 
@@ -315,24 +315,24 @@ Lines of code: 58 - 161 */
 }
 
 /* Media query for the navbar */
-@media (max-width: 615px) {
-    .navbar {
+@media (max-width: 615px) { /* Media query for the navbar to appear as a hamburger menu */
+    .navbar { /* Makes the elements in the navbar appear in a row */
         display: flex;
         flex-direction: row;
         align-items: top;
-        padding-left: 15px; /* Adds padding from the burger to the links */
+        padding-left: 15px; /* Adds padding from left side of the page, to make burger menu to appear a little to the left */
     }
-    .menu-button-container {
+    .menu-button-container { /* Displays the burger-box */
         display: flex;
         width: 40px;
-        cursor: pointer;
+        cursor: pointer; /* When you hover over burger-box, you get a different cursor to make it more apparent that you can click it */
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .menu-button,
     .menu-button::before,
-    .menu-button::after {
+    .menu-button::after { /* Display the burger image */
         display: block;
         background-image: url(../media/hamburger-menu.png); /* The icon is created ourself by Sander Sletvold */
         background-size: cover; /* "cover" stretch image to fill box */
@@ -340,14 +340,14 @@ Lines of code: 58 - 161 */
         height: 40px;
         width: 40px;
     } 
-    .menu {
+    .menu { /* Displays the unordered list in a collumn insted of row, and defines the position of where it appears */
         position: sticky;
         margin-top: 50px; /* Postitions pop-up menu relative to the hamburger */
-        margin-left: -55px; 
+        margin-left: -55px; /* Postitions pop-up menu relative to the hamburger */
         flex-direction: column; /* Stacks the menu-entries beneath each other */
         height: 164px; /* Determines the position of the dropdown meny relative to the burger */
     }
-    .menu > li {
+    .menu > li { /* Makes the li elements of the unordered list hidden, until burger-toggle input = checked */
         overflow: hidden; /* Hide menu 'li' text unless burger (input) checked */
         display: flex;
         width: 200px; /* Width of menu. For mobile, maybe 100 % had been better?? */
@@ -371,117 +371,117 @@ Lines of code: 58 - 161 */
 /* This marks the end of code taken from Tengel´s github */
 
 /* Media query for accessibility.html, lecture-hall.html and climbing-wall.html */
-@media (max-width: 1125px) {
+@media (max-width: 1125px) { 
     /* Changes to the layout for accessibility.html */
-    #accessibility-text-lighthouse-desktop {
+    #accessibility-text-lighthouse-desktop { /* Redefines the grid position keeping the same row, but stretching it across the whole screen */
         grid-column: 2/5;
     }
-    #accessibility-pictures-lighthouse-desktop {
+    #accessibility-pictures-lighthouse-desktop { /* Redefines the grid position keeping the same row, but stretching it across the whole screen */
         grid-column: 2/5;
     }
-    #accessibility-text-lighthouse-mobile  {
+    #accessibility-text-lighthouse-mobile  { /* Redefines the grid position, changing both row and collumn */
         grid-column: 2/5;
         grid-row: 6;
-        margin-left: 0px;
+        margin-left: 0px; /*TRENGER DENNE MARGIN LEFT?*/
     }
-    #accessibility-pictures-lighthouse-mobile {
+    #accessibility-pictures-lighthouse-mobile { /* Redefines the grid position, changing both row and collumn */
         grid-column: 2/5;
         grid-row: 7;
-        margin-left: 0px;
+        margin-left: 0px;/*TRENGER DENNE MARGIN LEFT?*/
     }
-    #accessibility-text-wave {
+    #accessibility-text-wave { /* Redefines the grid position, changing row to make it appear in the right order on the page*/
         grid-row: 8;
     }
-    #accessibility-pictures-wave-desktop {
+    #accessibility-pictures-wave-desktop { /* Redefines the grid position, changing row to make it appear in the right order on the page*/
         grid-row: 9;
     }
-    #accessibility-text-explination-wave {
+    #accessibility-text-explination-wave { /* Redefines the grid position, changing row to make it appear in the right order on the page*/
         grid-row: 8;
     }
-    #accessibility-pictures-wave-mobile {
+    #accessibility-pictures-wave-mobile { /* Redefines the grid position, changing row to make it appear in the right order on the page*/
         grid-row: 9;
     }
 
     /* Changes to the pictures of accessibility.html */
-    #lighthouse-desktop-full {
+    #lighthouse-desktop-full { /* Hides image when page is under 1125 px in width */
         display: none;
     }
-    #lighthouse-desktop-rep {
+    #lighthouse-desktop-rep { /* Makes image appear, covering the whole page except for margins */
         display: block;
         width: 84vw;
-        height: auto;
+        height: auto; /* Height scaling with the width of the current width of picture */
     }
-    #lighthouse-mobile-full {
+    #lighthouse-mobile-full { /* Hides image when page is under 1125 px in width */
         display: none;
     }
-    #lighthouse-mobile-rep {
+    #lighthouse-mobile-rep { /* Makes image appear, covering the whole page except for margins */
         display: block;
         width: 84vw;
-        height: auto;
+        height: auto; /* Height scaling with the width of the current width of picture */
     }
-    #wave-rep-full {
+    #wave-rep-full { /* Hides image when page is under 1125 px in width */
         display: none;
     }
     #wave-rep {
-        display: block;
+        display: block; /* Makes image appear, width set to 30% of current view-width */
         width: 30vw;
-        height: auto;
+        height: auto; /* Height scaling with the width of the current width of picture */
     }
-    #wave-rep-details-full {
+    #wave-rep-details-full { /* Hides image when page is under 1125 px in width */
         display: none;
     }
-    #wave-rep-details {
+    #wave-rep-details { /* Makes image appear, width set to 30% of current view-width */
         display: block;
         width: 30vw;
-        height: auto;
+        height: auto; /* Height scaling with the width of the current width of picture */
     }
 
     /* Changes to the layout for lecture-hall.html */
-    #lecture-hall-picture {
+    #lecture-hall-picture { /* Redefines the grid prosition to make it appear in the left collumn and under the appropriate text */
         grid-column: 2/3;
         grid-row: 3;
         margin-left: 0px;
     }
-    #lecture-hall-text-1200 {
+    #lecture-hall-text-1200 { /* Redefines the grid position to make text go across the whole page, except for margins on left and right */
         grid-column: 2/4;
     }
-    #lecture-hall-text-other-subjects {
+    #lecture-hall-text-other-subjects { /* Redefines grid prosition to make it appear under the picture */
         grid-row: 4;
     }
 
     /* Changes to the pictures of lecture-hall.html */
-    #auditorium-vertical {
+    #auditorium-vertical { /* Hides image when page is under 1125 px in width */
         display: none;
     }
-    #auditorium-vertical-cropped {
+    #auditorium-vertical-cropped { /* Makes image appear */
         display: block;
         width: 752px;
-        height: auto;
+        height: auto; /* Height set to auto to set the height relative to the width of picture */
     }
 
     /* Changes to the layout for climbing-wall.html */
-    #wrapper-climbing-wall {
+    #wrapper-climbing-wall { /* Changes the width of the collums of the wrapper in climbing-wall.html */
         grid-template-columns: 8vw 47vw 37vw 8vw;
     }
-    #climbing-wall-text-new-heights {
+    #climbing-wall-text-new-heights { /* Redefines the grid position, changes the main text to cover page from margin to margin */
         grid-column: 2/4;
         margin-right: 0px;
     }
-    #climbing-wall-pictures {
+    #climbing-wall-pictures { /* Redefines the grid position, moves the picture from the side of the page to appear under the main text */
         grid-column: 2/4;
         grid-row: 2;
     }
-    #climbing-wall-text-more-information {
+    #climbing-wall-text-more-information { /* Redefines the grid prosition, making the text appear under the picture */
         grid-row: 3;
     }
 
     /* Changes to the pictures of climbing-wall.html */
-    #climbing-wall-picture-cropped {
+    #climbing-wall-picture-cropped { /* Makes image appear, setting height and width to fit in the text */
         height: 500px;
         width: 752px;
         display: block;
     }
-    #climbing-wall-picture-tall {
+    #climbing-wall-picture-tall { /* Hides image when page is under 1125 px in width */
         display: none;
     }
 }
@@ -489,111 +489,113 @@ Lines of code: 58 - 161 */
 /* Media query for all pages */
 @media (max-width: 850px) {
     /* Changes to the pictures of index.html */
-    #picture-of-oslomet {
+    #picture-of-oslomet { /* When the page is under 850, make the pictures width scale with view-width to fit the screen from margin to margin*/
         width: 84vw;
-        height: auto;
+        height: auto; /* Height set to auto to set the height relative to the current width of picture */
     }
 
     /* Changes to the layout for accessibility.html */
-    #accessibility-text-universal-design {
+    #accessibility-text-universal-design { /* Redefines the grid position, making the text go from margin to margin */
         grid-column: 2/5;
     }
-    #accessibility-text-colors {
+    #accessibility-text-colors { /* Redefines the grid position */
         grid-row: 3;
-        grid-column: 2/5;
+        grid-column: 2/5; /* making the text go from margin to margin */
         margin-left: 0px;
     }
-    #accessibility-picture-colour {
+    #accessibility-picture-colour { /* Redefines the grid position, moving the picture appear in the right order */
         grid-row: 4;
         margin-bottom: 0px;
     }
-    #accessibility-picture-no-colour {
+    #accessibility-picture-no-colour { /* Redefines the grid position, making the picture appear in the right order */
         grid-row: 5;
         grid-column: 2/5;
         margin-left: 0px;
-        margin-bottom: 50px;
+        margin-bottom: 50px; /* Adds space under picture, to make the next row appear a bit lower under the pictures */
     }
-    #accessibility-text-lighthouse-desktop {
+    #accessibility-text-lighthouse-desktop { /* Redefines the grid position, changing row to make it appear in the right order on the page*/
         grid-row: 6;
     }
-    #accessibility-pictures-lighthouse-desktop {
+    #accessibility-pictures-lighthouse-desktop { /* Redefines the grid position, changing row to make it appear in the right order on the page*/
         grid-row: 7;
     }
-    #accessibility-text-lighthouse-mobile  {
+    #accessibility-text-lighthouse-mobile  { /* Redefines the grid position, changing row to make it appear in the right order on the page*/
         grid-row: 8;
     }
-    #accessibility-pictures-lighthouse-mobile {
+    #accessibility-pictures-lighthouse-mobile { /* Redefines the grid position, changing row to make it appear in the right order on the page*/
         grid-row: 9;
     }
-    #accessibility-text-wave {
+    #accessibility-text-wave { /* Redefines the grid position, making it appear in the correct row, and making the text go from margin to margin */
         grid-row: 10;
         grid-column: 2/5;
     }
-    #accessibility-pictures-wave-desktop {
+    #accessibility-pictures-wave-desktop { /* Redefines the grid position, changing row to make it appear in the right order on the page*/
         grid-row: 11;
     }
-    #accessibility-text-explination-wave {
+    #accessibility-text-explination-wave { /* Redefines the grid position, making it appear in the correct row, and making the text go from margin to margin */
         grid-column: 2/5;
         grid-row: 12;
         margin-left: 0px;
     }
-    #accessibility-pictures-wave-mobile {
+    #accessibility-pictures-wave-mobile { /* Redefines the grid position, changing row to make it appear in the right order on the page*/
         grid-row: 11;
     }
 
     /* Changes to the pictures of accessibility.html */
-    #lighthouse-desktop-rep-cropped {
+    #lighthouse-desktop-rep-cropped { /* Makes image appear when page is under 850 px in width */
         display: block;
         width: 63vw;
-        height: auto;
+        height: auto; /* Height set to auto to set the height relative to the current width of picture */
     }
-    #lighthouse-mobile-rep-cropped {
+    #lighthouse-mobile-rep-cropped { /* Makes image appear when page is under 850 px in width */
         display: block;
         width: 63vw;
-        height: auto;
+        height: auto; /* Height set to auto to set the height relative to the current width of picture */
     }
-    #lighthouse-desktop-rep {
+    #lighthouse-desktop-rep { /* Hides image when page is under 850 px in width */
         display: none;
     }
-    #lighthouse-mobile-rep {
+    #lighthouse-mobile-rep { /* Hides image when page is under 850 px in width */
         display: none;
     }
-    #wave-rep {
-        width: 38vw;
+    #wave-rep { /* When page is under 850 px in width, makes picture a bit bigger */
+        width: 38vw; 
+        /* Height already set to auto when page is under 1125 px in width */
     }
-    #wave-rep-details {
-        width: 38vw;
+    #wave-rep-details { /* When page is under 850 px in width, makes picture a bit bigger */
+        width: 38vw; /* Height already set to auto when page is under 1125 px in width */
     }
     #color-blindness-test-protanopia {
         width: 63vw;
-        height: auto;
-        margin-left: 0px;
+        /* Height already set to auto */
+        margin-left: 0px; /*TRENGER DENNE MARGIN 0?*/
     }
     #color-blindness-test-achromatopsia {
         width: 63vw;
-        height: auto;
-        margin-left: 0px;
+        /* Height already set to auto */
+        margin-left: 0px; /*TRENGER DENNE MARGIN 0?*/
     }
 
     /* Changes to the pictures of topical.html */
-    #fake-news {
+    #fake-news { /* When the page is under 850, make the pictures width scale with view-width to fit the screen from margin to margin*/
         width: 84vw;
-        height: auto;
+        height: auto; /* Height set to auto to set the height relative to the current width of picture */
     }
 
     /* Changes to the pictures of lecture-hall.html */
-    #auditorium-horizontal {
+    #auditorium-horizontal { /* When the page is under 850 px in width, make the pictures width scale with view-width to fit the screen from margin to margin*/
         width: 84vw;
-        height: auto;
+        height: auto; /* Height set to auto to set the height relative to the current width of picture */
     }
-    #auditorium-vertical-cropped {
+    #auditorium-vertical-cropped { /* When the page is under 850 px in width, make the pictures width scale with view-width to fit the screen from margin to margin*/
         width: 84vw;
+        /* Height is already set to auto when page is under 1125 px in width*/
     }
 
     /* Changes to the pictures of climbing-wall.html */
-    #climbing-wall-picture-cropped {
+    #climbing-wall-picture-cropped { /* When the page is under 850 px in width, make the pictures width scale with view-width to fit the screen from margin to margin*/
         width: 84vw;
-        height: auto;
+        height: auto; /* Height set to auto to set the height relative to the current width of picture */
     }
 }
 
@@ -603,39 +605,43 @@ The media query is set to activeate for screen sizes with less than 431px viewpo
 With a maximum of 430px viewport width we play it safe to scale for all phones */
 @media (max-width: 430px) {
     /* Changes to the layout for accessibility.html */
-    #accessibility-pictures-wave-mobile {
+    #accessibility-pictures-wave-mobile { /* Redefines the grid prosition to make picture appear across the whole screen and in the correct row */
         grid-column: 2/5;
         grid-row: 13;
         margin-left: 0px;
     }
 
     /* Changes to the pictures of accessibility.html */
-    #lighthouse-desktop-rep-cropped {
+    #lighthouse-desktop-rep-cropped { /* Makes picture stretch from margin to margin */
         width: 84vw;
+        /* Height already set to auto when page is under 850px in width */
     }
-    #lighthouse-mobile-rep-cropped {
+    #lighthouse-mobile-rep-cropped { /* Makes picture stretch from margin to margin */
         width: 84vw;
+        /* Height already set to auto when page is under 850px in width */
     }
-    #wave-rep {
+    #wave-rep { /* Hides image when page is under 450px in width */
         display: none;
     }
-    #wave-rep-details {
+    #wave-rep-details { /* Hides image when page is under 450px in width */
         display: none;
     }
-    #wave-rep-cropped {
+    #wave-rep-cropped { /* Makes image appear, stretching from margin to margin, scaling with the current width of the page */
         display: block;
         width: 84vw;
-        height: auto;
+        height: auto; /* Height set to auto to set the height relative to the current width of picture */
     }
-    #wave-rep-details-cropped {
+    #wave-rep-details-cropped { /* Makes image appear, stretching from margin to margin, scaling with the current width of the page */
         display: block;
         width: 84vw;
-        height: auto;
+        height: auto; /* Height set to auto to set the height relative to the current width of picture */
     }
-    #color-blindness-test-protanopia {
+    #color-blindness-test-protanopia { /* Makes picture stretch from margin to margin */
         width: 84vw;
+        /* Height already set to auto */
     }
-    #color-blindness-test-achromatopsia {
-        width: 84vw;
+    #color-blindness-test-achromatopsia { /* Makes picture stretch from margin to margin */
+        width: 84vw; 
+        /* Height already set to auto */
     }
 }
