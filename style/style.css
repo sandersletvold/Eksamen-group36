@@ -340,7 +340,7 @@ Lines of code: 58 - 161 */
         height: 40px;
         width: 40px;
     } 
-    .menu { /* Displays the unordered list in a collumn insted of row, and defines the position of where it appears */
+    .menu { /* Displays the unordered list in a column insted of row, and defines the position of where it appears */
         position: sticky;
         margin-top: 50px; /* Postitions pop-up menu relative to the hamburger */
         margin-left: -55px; /* Postitions pop-up menu relative to the hamburger */
@@ -379,15 +379,13 @@ Lines of code: 58 - 161 */
     #accessibility-pictures-lighthouse-desktop { /* Redefines the grid position keeping the same row, but stretching it across the whole screen */
         grid-column: 2/5;
     }
-    #accessibility-text-lighthouse-mobile  { /* Redefines the grid position, changing both row and collumn */
+    #accessibility-text-lighthouse-mobile  { /* Redefines the grid position, changing both row and column */
         grid-column: 2/5;
         grid-row: 6;
-        margin-left: 0px; /*TRENGER DENNE MARGIN LEFT?*/
     }
-    #accessibility-pictures-lighthouse-mobile { /* Redefines the grid position, changing both row and collumn */
+    #accessibility-pictures-lighthouse-mobile { /* Redefines the grid position, changing both row and column */
         grid-column: 2/5;
         grid-row: 7;
-        margin-left: 0px;/*TRENGER DENNE MARGIN LEFT?*/
     }
     #accessibility-text-wave { /* Redefines the grid position, changing row to make it appear in the right order on the page*/
         grid-row: 8;
@@ -437,7 +435,7 @@ Lines of code: 58 - 161 */
     }
 
     /* Changes to the layout for lecture-hall.html */
-    #lecture-hall-picture { /* Redefines the grid prosition to make it appear in the left collumn and under the appropriate text */
+    #lecture-hall-picture { /* Redefines the grid prosition to make it appear in the left column and under the appropriate text */
         grid-column: 2/3;
         grid-row: 3;
         margin-left: 0px;
@@ -568,12 +566,10 @@ Lines of code: 58 - 161 */
     #color-blindness-test-protanopia {
         width: 63vw;
         /* Height already set to auto */
-        margin-left: 0px; /*TRENGER DENNE MARGIN 0?*/
     }
     #color-blindness-test-achromatopsia {
         width: 63vw;
         /* Height already set to auto */
-        margin-left: 0px; /*TRENGER DENNE MARGIN 0?*/
     }
 
     /* Changes to the pictures of topical.html */
